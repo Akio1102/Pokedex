@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
@@ -15,7 +16,7 @@
 </head>
 
 <body>
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 d-flex flex-column">
         <!--navbar-->
         <header>
             <!-- navbar -->
@@ -29,88 +30,139 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link " aria-current="page" href="#">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link" href="#">Juegos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link" href="#">Historia</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Regiones</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
-        <section>
-            <div class="row text-center fs-1">
-                <div class="col-sm-4 col-md-3 gx-sm-2 gy-sm-4">
-                    <div class="py-5 border bg-light">1</div>
-                </div>
-                <div class="col-sm-4 col-md-3 gx-sm-2 gy-sm-4">
-                    <div class="py-5 border bg-light">2</div>
-                </div>
-                <div class="col-sm-4 col-md-3 gx-sm-2 gy-sm-4">
-                    <div class="py-5 border bg-light">3</div>
-                </div>
-                <div class="col-sm-4 col-md-3 gx-sm-2 gy-sm-4">
-                    <div class="py-5 border bg-light">4</div>
-                </div>
-                <div class="col-sm-4 col-md-3 gx-sm-2 gy-sm-4">
-                    <div class="py-5 border bg-light">5</div>
-                </div>
-                <div class="col-sm-4 col-md-3 gx-sm-2 gy-sm-4">
-                    <div class="py-5 border bg-light">6</div>
-                </div>
-                <div class="col-sm-4 col-md-3 gx-sm-2 gy-sm-4">
-                    <div class="py-5 border bg-light">7</div>
-                </div>
-                <div class="col-sm-4 col-md-3 gx-sm-2 gy-sm-4">
-                    <div class="py-5 border bg-light">8</div>
-                </div>
-                <div class="col-sm-4 col-md-3 gx-sm-2 gy-sm-4">
-                    <div class="py-5 border bg-light">9</div>
-                </div>
-                <div class="col-sm-4 col-md-3 gx-sm-2 gy-sm-4">
-                    <div class="py-5 border bg-light">10</div>
-                </div>
-                <div class="col-sm-4 col-md-3 gx-sm-2 gy-sm-4">
-                    <div class="py-5 border bg-light">11</div>
-                </div>
-                <div class="col-sm-4 col-md-3 gx-sm-2 gy-sm-4">
-                    <div class="py-5 border bg-light">12</div>
-                </div>
-            </div>
-        </section>
-        <!-- carta en especifico(para generar por java script) -->
-        <section>
-           <div class="row p-2">
-              <div class="col-sm-4 col-md-2 gx-sm-2 gy-sm-4">
-                    <div class="row fs-2 text-center">
-                        <div class="col-sm-9 border">
-                            {NAME}
+        <section class="d-flex justify-content-center ">
+            <div class="row">
+                <div class="col-1 bg-inv-poke"></div>
+                <div class="col-10 bg-poke ">
+                    <div class="row text-center fs-1 p-5">
+                        <div class="col-sm-6 col-md-4 col-lg-3 gx-lg-5">
+                            <div class="row text-center fs-3 bg-light">
+                                <div class="col-12 ">
+                                    <div class="row text-center">
+                                        <div class="col-sm-9 border">
+                                            {NAME}
+                                        </div>
+                                        <div class="col-sm-3 border">
+                                            {ID}
+                                        </div>
+                                        <div class="col-sm-12 py-5 border">
+                                            {img}
+                                        </div>
+                                        <div class="col-sm-6 border">{weight}</div>
+                                        <div class="col-sm-6 border">{height}</div>
+                                        <div class="col-sm-12  border ">
+                                            <ul class="text-left ">
+                                                <li>tipo:{type(s)}</li>
+                                                <li>juego:{juego}</li>
+                                                <li>generacion:{generation-i}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-3 border">
-                            {ID}
+                        <div class="col-sm-6 col-md-4 col-lg-3 gx-lg-5">
+                            <div class="row text-center fs-3 bg-light">
+                                <div class="col-12 ">
+                                    <div class="row text-center">
+                                        <div class="col-sm-9 border">
+                                            {NAME}
+                                        </div>
+                                        <div class="col-sm-3 border">
+                                            {ID}
+                                        </div>
+                                        <div class="col-sm-12 py-5 border">
+                                            {img}
+                                        </div>
+                                        <div class="col-sm-6 border">{weight}</div>
+                                        <div class="col-sm-6 border">{height}</div>
+                                        <div class="col-sm-12  border ">
+                                            <ul class="text-left ">
+                                                <li>tipo:{type(s)}</li>
+                                                <li>juego:{juego}</li>
+                                                <li>generacion:{generation-i}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-12 py-5 border">
-                            {img}
+                        <div class="col-sm-6 col-md-4 col-lg-3 gx-lg-5">
+                            <div class="row text-center fs-3 bg-light">
+                                <div class="col-12 ">
+                                    <div class="row text-center">
+                                        <div class="col-sm-9 border">
+                                            {NAME}
+                                        </div>
+                                        <div class="col-sm-3 border">
+                                            {ID}
+                                        </div>
+                                        <div class="col-sm-12 py-5 border">
+                                            {img}
+                                        </div>
+                                        <div class="col-sm-6 border">{weight}</div>
+                                        <div class="col-sm-6 border">{height}</div>
+                                        <div class="col-sm-12  border ">
+                                            <ul class="text-left ">
+                                                <li>tipo:{type(s)}</li>
+                                                <li>juego:{juego}</li>
+                                                <li>generacion:{generation-i}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-sm-6 border">{weight}</div>
-                        <div class="col-sm-6 border">{height}</div>
-                        <div class="col-sm-12  border ">
-                            <ul class="fs-5 text-left ">
-                                <li>tipo:{type(s)}</li>
-                                <li>region:{region}</li>
-                                <li>generacion:{generation-i}</li>
-                            </ul>
+                        <div class="col-sm-6 col-md-4 col-lg-3 gx-lg-5">
+                            <div class="row text-center fs-3 bg-light">
+                                <div class="col-12 ">
+                                    <div class="row text-center">
+                                        <div class="col-sm-9 border">
+                                            {NAME}
+                                        </div>
+                                        <div class="col-sm-3 border">
+                                            {ID}
+                                        </div>
+                                        <div class="col-sm-12 py-5 border">
+                                            {img}
+                                        </div>
+                                        <div class="col-sm-6 border">{weight}</div>
+                                        <div class="col-sm-6 border">{height}</div>
+                                        <div class="col-sm-12  border ">
+                                            <ul class="text-left ">
+                                                <li>tipo:{type(s)}</li>
+                                                <li>juego:{juego}</li>
+                                                <li>generacion:{generation-i}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="col-1 bg-inv-poke"></div>
+            </div>
+
         </section>
+        <!-- carta en especifico(para generar por java script) -->
+
     </div>
 </body>
 
