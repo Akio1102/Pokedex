@@ -1,0 +1,5 @@
+.nav-pills-img {
+    object-fit: cover;
+    height: 60vh;
+    filter: brightness(50%);
+}
