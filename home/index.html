@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="shortcut icon" href="pikachu.png" image="/x-icon">
+    <link rel="shortcut icon" href="..//assets/pokebola.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
 </head>
@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="//upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/250px-International_Pok%C3%A9mon_logo.svg.png" width="150px" alt=""></a>
+                <a class="navbar-brand" href="#"><img src="../assets/pikachu.png" width="60rem" alt=""></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -41,11 +41,13 @@
             </div>
         </nav>
     </header>
-    <!-- INICIO -->
     <div class="container-fluid">
+      <!-- INICIO -->
         <div class="row bg-info mt-1 p-2 flex-column flex-lg-row text-center">
             <div class="col col-lg-7 d-flex flex-column align-items-center justify-content-center g-0">
-                <div class="col-9 bg-secondary p-3 my-4"><h1>TÍTULO</h1></div>
+                <div class="col-9 bg-secondary my-4">
+                  <img src="//upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/250px-International_Pok%C3%A9mon_logo.svg.png" alt="">
+                </div>
                 <div class="col-6 bg-secondary p-3 mt-4 mb-5">texto para vender ¿?</div>
                 <div class="col-10 bg-secondary p-3 align-self-center align-self-lg-start">mini-pokemones</div>
             </div>
@@ -57,22 +59,27 @@
             </div>
         </div>
         <!-- REDIRECCIÓN HISTORIA -->
-        <div class="row text-center bg-info mt-1 flex-column flex-lg-row">
-          <div class="col d-flex flex-column p-3 text-center order-lg-2">
-            <div class="col bg-warning my-4">
+        <div class="row text-center bg-info mt-1 align-items-center">
+          <div class="col p-3 text-center order-lg-2">
+            <div class="col-12 bg-warning my-4">
               <h3>Título</h3>
             </div>
-            <div class="col bg-warning p-3">
+            <div class="col-12 bg-warning p-3">
               <p>texto</p>
             </div>
-            <div class="col d-flex justify-content-center my-3">
+            <div class="col-12 d-flex justify-content-center my-3">
               <button type="button" class="btn btn-light">Light</button>
             </div>
           </div>
           <!-- imagenes collage -->
-          <div class="col p-4 bg-ganer">
-            <div class="historia__imagenes">
-              tres imágenes superpuestas
+          <div class="historia__contenedor col-lg-6 p-4">
+            <div class=" bg-danger h-100 position-relative">
+              <div class="historia__img-1 p-2 position-absolute bottom-0 start-50 translate-middle-x">
+                <img src="https://snipstock.com/assets/cdn/png/6246ed094a337a055723c55368611eaa.png" alt="">
+              </div>
+              <div class="historia__img-2 p-2">
+                <img src="https://www.esimagenes.com/pimagen/imagen-pokemon-png.png" alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -114,55 +121,94 @@
           </div>
           <!-- REDIRECCIÓN REGIONES -->
           <div class="row bg-info mt-1 p-4">
-            <ul class="nav nav-pills mb-3 text-white" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false" disabled>Disabled</button>
-              </li>
-            </ul>
-            <!-- Card 1 -->
-            <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"><div class="card text-bg-dark">
-                  <img src="https://plus.unsplash.com/premium_photo-1680721444847-33e37f1bd4d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80" class="card-img nav-pills-img" alt="...">
-                  <div class="card-img-overlay">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
+            <div class="col-12 text-center">
+              <div class="bg-secondary">
+                <h3>Regiones</h3>
               </div>
-              <!-- Card 2 -->
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                  <div class="card text-bg-dark">
-                      <img src="https://phantom-marca.unidadeditorial.es/dc5acd1c19db4db75bb125f31661825f/crop/7x0/879x490/resize/1320/f/jpg/assets/multimedia/imagenes/2021/08/18/16292958898937.jpg" class="card-img nav-pills-img" alt="...">
-                      <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                      </div>
-                  </div>
-              </div>
-              <!-- Card 3 -->
-              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-                <div class="card text-bg-dark">
-                  <img src="https://cdn.custom-cursor.com/collections/129/cover-pokemon-preview.png" class="card-img nav-pills-img" alt="...">
-                  <div class="card-img-overlay">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
             </div>
+            <!-- nav + cards -->
+            <div class="col-12 p-5">
+              <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Región A</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Región B</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Región C</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Región D</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="pills-region-tab" data-bs-toggle="pill" data-bs-target="#pills-region" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Región E</button>
+                </li>
+              </ul>
+              <!-- Card 1 -->
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"><div class="card text-bg-dark">
+                    <img src="https://plus.unsplash.com/premium_photo-1680721444847-33e37f1bd4d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80" class="card-img nav-pills-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                    <div class="card text-bg-dark">
+                        <img src="https://phantom-marca.unidadeditorial.es/dc5acd1c19db4db75bb125f31661825f/crop/7x0/879x490/resize/1320/f/jpg/assets/multimedia/imagenes/2021/08/18/16292958898937.jpg" class="card-img nav-pills-img" alt="...">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                  <div class="card text-bg-dark">
+                    <img src="https://cdn.custom-cursor.com/collections/129/cover-pokemon-preview.png" class="card-img nav-pills-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
+                  <div class="card text-bg-dark">
+                    <img src="https://www.elcolombiano.com/binrepository/790x446/5c0/780d446/none/11101/XVGO/pokemon_41043925_20221111151108.jpg" class="card-img nav-pills-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-region" role="tabpanel" aria-labelledby="pills-region-tab" tabindex="0">
+                  <div class="card text-bg-dark">
+                    <img src="https://i.blogs.es/2e39a5/anniversaryposter2019/840_560.jpeg" class="card-img nav-pills-img" alt="...">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
+              </div>
+            </div>
+            <!-- botón -->
+            <div class="col-12 p-3 text-center">
+              <button type="button" class="btn btn-light">Descubre más regiones</button>
+            </div>
+          </div>
+          <!-- SECCIÓN CREADORES -->
+          <div class="row bg-info mt-1">
+            .
           </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

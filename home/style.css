@@ -1,5 +1,44 @@
 .nav-pills-img {
     object-fit: cover;
-    height: 60vh;
+    height: 55vh;
     filter: brightness(50%);
+}
+
+.historia__contenedor {
+    height: 50vh;
+}
+
+.historia__img-1 {
+    position: absolute;
+    right: calc(100%/10 * 6.5);
+    z-index: 10;
+}
+
+.historia__img-1 img {
+    width: 15rem;
+}
+
+.historia__img-2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: calc(100%/10 * 4);
+    z-index: 20;
+}
+
+.historia__img-2 img {
+    min-width: 20rem;
+    max-width: 30rem;
+}
+
+.historia__img-3 {
+    position: absolute;
+    bottom: 0;
+    right: calc(100%/2);
+    z-index: 30;
+}
+
+.historia__img-3 img {
+    width: 15rem;
 }
