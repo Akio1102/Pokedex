@@ -1,16 +1,12 @@
-body{
-    background-image: url("../assets/cool-background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
+body {
+  background-image: url("../assets/cool-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
 }
-.img-responsive{
-    object-fit: cover;
-    height: 50rem;
-    width: 100%;
-    filter:brightness(70%)
-}
-
-.img-card{
-    object-fit: cover;
+.img-responsive {
+  object-fit: cover;
+  height: 50rem;
+  width: 100%;
+  filter: brightness(70%);
 }
