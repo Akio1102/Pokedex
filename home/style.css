@@ -1,13 +1,18 @@
-.nav-pills-img {
+
+/* INICIO */
+.inicio__imagen {
+    height: 90%;
+}
+
+.inicio__imagen img {
     object-fit: cover;
-    height: 55vh;
-    filter: brightness(50%);
 }
 
-.historia__contenedor {
-    height: 50vh;
+.inicio__pixel-pokemon {
+    height: 100%;
 }
 
+/* HISTORIA */
 .historia__img-1 {
     position: absolute;
     right: calc(100%/10 * 6.5);
@@ -41,4 +46,11 @@
 
 .historia__img-3 img {
     width: 15rem;
+}
+
+/* REGIONES */
+.nav-pills-img {
+    object-fit: cover;
+    height: 55vh;
+    filter: brightness(50%);
 }
