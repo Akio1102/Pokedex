@@ -22,37 +22,38 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#inicio">Home</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active" href="#">Historia</a>
+                            <a class="nav-link active" aria-current="page" href="#historia">Historia</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active" href="#">Pokédex</a>
+                            <a class="nav-link active" aria-current="page" href="#pokedex">Pokédex</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Regiones</a>
+                            <a class="nav-link active" aria-current="page" href="#juegos" tabindex="-1" aria-disabled="true">Juegos</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Juegos</a>
+                            <a class="nav-link active" aria-current="page" href="#regiones" tabindex="-1" aria-disabled="true">Regiones</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container-fluid">
+    <div class="container-fluid g-0">
       <!-- INICIO -->
-        <div class="row bg-info mt-1 flex-column flex-lg-row text-center g-0 ">
+        <div id="inicio" class="inicio row flex-column flex-lg-row text-center g-0 ">
             <div class="col col-lg-6 d-flex flex-column align-items-center justify-content-center g-0">
-                <div class="col-11 bg-secondary mt-4">
-                  <img src="https://1000marcas.net/wp-content/uploads/2020/01/Logo-Pokemon.png" alt="Pokemon-title" class="inicio__titulo img-fluid">
+                <div class="col-11 mt-5 mt-lg-3">
+                  <img src="../assets/logoPokemon.png" alt="Pokemon-title" class="inicio__titulo img-fluid">
                 </div>
-                <div class="col-10 bg-secondary p-3 mt-4 mb-5">
-                  <p>¡Bienvenido al mundo de Pokémon! Descubre la emoción y la diversión de capturar a tus criaturas favoritas y entrenarlas para convertirlas en las más fuertes. Con más de 800 especies diferentes, hay un Pokémon para todos los gustos y estilos de juego. Además, ¿sabías que Pikachu, la mascota más famosa de Pokémon, originalmente fue diseñada como una rata? Únete a la aventura Pokémon y experimenta la emoción de ser un entrenador en tu camino hacia la gloria. ¡Atrapa todos los Pokémon que puedas!</p>
+                <div class="col-10 p-3 my-3">
+                  <h5>¡Bienvenido al mundo de Pokémon! Descubre la emoción y la diversión de capturar a tus criaturas favoritas y entrenarlas para convertirlas en las más fuertes. <br>Únete a la aventura Pokémon y experimenta la emoción de ser un entrenador en tu camino hacia la gloria. ¡Atrapa todos los Pokémon que puedas!</h5>
                 </div>
-                <div class="col-12 p-3 align-self-center align-self-lg-start">
-                  <div class="col-12 flex-row d-flex bg-success align-items-center">
+                <!-- pixel-pokemones -->
+                <div class="col-9 col-lg-12 p-3 align-self-center align-self-lg-start">
+                  <div class="col-12 flex-row d-flex align-items-center">
                     <div class="col">
                       <img src="../assets/pixel-pokemon-1.png" alt="pixel-pokemon" class="inicio__pixel-pokemon img-fluid">
                     </div>
@@ -78,57 +79,94 @@
                 </div>
             </div>
             <!-- imagen -->
-            <div class="col-8 col-lg-6  g-0 ">
-                <div class="inicio__imagen col bg-secondary pt-3 m-1 d-flex justify-content-center">
+            <div class="col-12 col-lg-6 g-0 justify-content-center d-flex">
+                <div class="inicio__imagen col-9 col-md-7 col-lg-12 pt-3 mb-3 d-flex justify-content-center">
                     <img src="../assets/home-img.png" alt="inicio-imagen" class="img-fluid h-100">
                 </div>
             </div>
         </div>
         <!-- REDIRECCIÓN HISTORIA -->
-        <div class="row text-center bg-info mt-1 align-items-center">
-          <div class="col p-3 text-center order-lg-2">
-            <div class="col-12 bg-warning my-4">
-              <h3>Título</h3>
+        <div id="historia" class="historia row text-center mt-1 g-0">
+          <div class="col-12 col-lg-7 p-3 text-center order-lg-2 align-items-center d-flex flex-column">
+            <div class="col-12 my-4 p-3">
+              <h4>El nacimiento de una franquicia: La historia detrás de una leyenda</h4>
             </div>
-            <div class="col-12 bg-warning p-3">
-              <p>texto</p>
+            <div class="col-10">
+              <h5>Desde su lanzamiento en Japón en 1996, Pokémon ha cautivado a personas de todas las edades en todo el mundo con su divertida jugabilidad, personajes entrañables y fascinante mundo de criaturas. <br>¡Descubre todo lo que necesitas saber sobre la historia de Pokémon y únete a la diversión y explora el maravilloso mundo de Pokémon hoy mismo!</h5>
             </div>
             <div class="col-12 d-flex justify-content-center my-3">
-              <button type="button" class="btn btn-light">Light</button>
+              <button type="button" class="btn btn-light">Más información</button>
             </div>
           </div>
           <!-- imagenes collage -->
-          <div class="historia__contenedor col-lg-6 p-4">
+          <div class="historia__contenedor col-12 col-lg-5 p-4">
             <div class=" bg-danger h-100">
             
             </div>
           </div>
         </div>
         <!-- REDIRECCIÓN POKÉDEX -->
-        <div class="row p-3 bg-info mt-1 text-center align-items-center">
-          <div class="col-12 bg-secondary my-4">
-            <h3>Pokemones destacados</h3>
+        <div id="pokedex" class="pokedex row py-5 p-3 bg-info mt-1 text-center align-items-center g-0 justify-content-center">
+          <div class="col-12 mt-5">
+            <h2>Pokemones destacados</h2>
           </div>
           <!-- cards -->
-          <div class="row justify-content-center g-0">
-            <div class="col-12 col-md-5 col-xl-3 p-4 bg-danger">Card</div>
-            <div class="col-12 col-md-5 col-xl-3 p-4 bg-light">Card</div>
-            <div class="col-12 col-md-5 col-xl-3 p-4 bg-success">Card</div>
-            <div class="col-12 col-md-5 col-xl-3 p-4 bg-warning">Card</div>
+          <div class="row justify-content-center p-3 g-0">
+            <!-- card 1 -->
+            <div class="col-10 col-sm-5 col-lg-3 p-4">
+              <div class="pokedex__card bg-light h-100 w-100 d-flex flex-column align-items-start p-4">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="" class="img-fluid align-self-center">
+                <h5 class="mt-3"><strong>Charizard</strong></h5>
+                <div class="col-12 d-flex flex-row">
+                  <div class="pokedex__cards-features bg-success px-3 py-1 m-1">Volador</div>
+                  <div class="pokedex__cards-features bg-warning px-3 py-1 m-1">Fuego</div>
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="col-10 col-sm-5 col-lg-3 p-4">
+              <div class="pokedex__card bg-light h-100 w-100 d-flex flex-column align-items-start p-4">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/150.png" alt="" class="img-fluid align-self-center">
+                <h5 class="mt-3"><strong>Mewtwo</strong></h5>
+                <div class="col-12 d-flex flex-row">
+                  <div class="pokedex__cards-features bg-primary px-3 py-1 m-1">Psíquico</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-sm-5 col-lg-3 p-4">
+              <div class="pokedex__card bg-light h-100 w-100 d-flex flex-column align-items-start p-4">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="" class="img-fluid align-self-center">
+                <h5 class="mt-3"><strong>Squirtle</strong></h5>
+                <div class="col-12 d-flex flex-row">
+                  <div class="pokedex__cards-features bg-info px-3 py-1 m-1">Agua</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-10 col-sm-5 col-lg-3 p-4">
+              <div class="pokedex__card bg-light h-100 w-100 d-flex flex-column align-items-start p-4">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="" class="img-fluid align-self-center">
+                <h5 class="mt-3"><strong>Pikachu</strong></h5>
+                <div class="col-12 d-flex flex-row">
+                  <div class="pokedex__cards-features bg-warning px-3 py-1 m-1">Eléctrico</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-12 p-3 ">
-            <div class="bg-light">¿Quieres conocer más?</div>
+          <div class="col-8">
+            <div class="mt-5"><h6>Descubre a todos los Pokémon y conviértete en un verdadero maestro</h6></div>
           </div>
-          <div class="col-12 p-3">
-            <button type="button" class="btn btn-light">Mira nuestra pokédex</button>
+          <div class="col-12 p-3 mb-5">
+            <button type="button" class="btn btn-light"> ¡Entra a nuestra Pokédex!</button>
           </div>
         </div>
+        <!-- DIVISIÓN COOL -->
+
         <!-- REDIRECCIÓN JUEGOS -->
-        <div class="row p-3 bg-info mt-1 text-center">
+        <div id="juegos" class="juegos row p-3 mt-1 text-center g-0 d-flex align-items-center">
           <!-- video -->
           <div class="col-12 col-lg-6 order-lg-2">
-            <div class="bg-success p-5">
-              {video}
+            <div class="bg-success p-3">
+              <iframe class="img-fluid h-100" src="https://www.youtube.com/embed/0sd_GLcJTYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
           </div>
           <div class="col-12 col-lg-6">
@@ -141,81 +179,76 @@
           </div>
           </div>
           <!-- REDIRECCIÓN REGIONES -->
-          <div class="row bg-info mt-1 p-4">
+          <div id="regiones" class="regiones row mt-1 p-4 g-0 d-flex justify-content-center">
             <div class="col-12 text-center">
-              <div class="bg-secondary">
-                <h3>Regiones</h3>
+              <div class="mt-5">
+                <h2>Regiones</h2>
               </div>
             </div>
             <!-- nav + cards -->
-            <div class="col-12 p-5">
+            <div class=" regiones__cards-box col-12 col-sm-10 col-lg-8 p-4 mt-4">
               <ul class="nav nav-pills nav-justified mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Región A</button>
+                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Kanto</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Región B</button>
+                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Johto</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Región C</button>
+                  <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Hoenn</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Región D</button>
+                  <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Sinnoh</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-region-tab" data-bs-toggle="pill" data-bs-target="#pills-region" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Región E</button>
+                  <button class="nav-link" id="pills-region-tab" data-bs-toggle="pill" data-bs-target="#pills-region" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">Alola</button>
                 </li>
               </ul>
               <!-- Card 1 -->
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"><div class="card text-bg-dark">
-                    <img src="https://plus.unsplash.com/premium_photo-1680721444847-33e37f1bd4d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80" class="card-img nav-pills-img" alt="...">
-                    <div class="card-img-overlay">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5b/latest/20180712231931/Mapa_de_Kanto_LGPE.png/1200px-Mapa_de_Kanto_LGPE.png" class="card-img nav-pills-img" alt="...">
+                    <div class="card-img-overlay p-4">
+                      <h5 class="card-title fs-2">Kanto</h5>
+                      <p class="card-text font-monospace fs-6"> La región original de Pokémon, donde todo empezó. Con ciudades como Ciudad Plateada, Ciudad Celeste y Ciudad Carmín, es un lugar lleno de aventuras y desafíos emocionantes. Prepárate para desafiar al Alto Mando de la Liga Pokémon y capturar a los 151 Pokémon originales.</p>
                     </div>
                   </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
                     <div class="card text-bg-dark">
-                        <img src="https://phantom-marca.unidadeditorial.es/dc5acd1c19db4db75bb125f31661825f/crop/7x0/879x490/resize/1320/f/jpg/assets/multimedia/imagenes/2021/08/18/16292958898937.jpg" class="card-img nav-pills-img" alt="...">
-                        <div class="card-img-overlay">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                        <img src="https://areajugones.sport.es/wp-content/uploads/2020/09/Johto.jpg" class="card-img nav-pills-img" alt="...">
+                        <div class="card-img-overlay p-4">
+                          <h5 class="card-title fs-2">Johto</h5>
+                          <p class="card-text font-monospace">La región de la segunda generación de Pokémon, es conocida por su estética rural y su encanto nostálgico. Prepárate para recorrer el Bosque Azalea, el Monte Plateado y la Torre Quemada, mientras te enfrentas a los ocho líderes de gimnasio y a la Elite Cuatro.</p>
                         </div>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
                   <div class="card text-bg-dark">
-                    <img src="https://cdn.custom-cursor.com/collections/129/cover-pokemon-preview.png" class="card-img nav-pills-img" alt="...">
-                    <div class="card-img-overlay">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    <img src="https://images.wikidexcdn.net/mwuploads/wikidex/7/73/latest/20141112124305/Mapa_de_Hoenn_ROZA_se%C3%B1alizado.png" class="card-img nav-pills-img" alt="...">
+                    <div class="card-img-overlay p-4">
+                      <h5 class="card-title fs-2">Hoenn</h5>
+                      <p class="card-text font-monospace">La región de la tercera generación de Pokémon, es un lugar lleno de aventuras en la naturaleza. Con ciudades como Ciudad Petalia, Ciudad Férrica y Ciudad Calagua, es un lugar lleno de misterios por descubrir y desafíos por superar. Prepárate para conocer a los Pokémon legendarios Groudon y Kyogre.</p>
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">
                   <div class="card text-bg-dark">
-                    <img src="https://www.elcolombiano.com/binrepository/790x446/5c0/780d446/none/11101/XVGO/pokemon_41043925_20221111151108.jpg" class="card-img nav-pills-img" alt="...">
-                    <div class="card-img-overlay">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/d2/latest/20210825190744/Sinnoh_DBPR.png/1200px-Sinnoh_DBPR.png" class="card-img nav-pills-img" alt="...">
+                    <div class="card-img-overlay p-4">
+                      <h5 class="card-title fs-2">Sinnoh</h5>
+                      <p class="card-text font-monospace">Es conocida por su belleza natural y sus ciudades llenas de cultura. Prepárate para explorar lugares como Ciudad Jubileo, Ciudad Puntaneva y Ciudad Vetusta, mientras te enfrentas a los ocho líderes de gimnasio y al Alto Mando de la Liga Pokémon.</p>
                     </div>
                   </div>
                 </div>
                 <div class="tab-pane fade" id="pills-region" role="tabpanel" aria-labelledby="pills-region-tab" tabindex="0">
                   <div class="card text-bg-dark">
-                    <img src="https://i.blogs.es/2e39a5/anniversaryposter2019/840_560.jpeg" class="card-img nav-pills-img" alt="...">
-                    <div class="card-img-overlay">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                    <img src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/e/e5/latest/20170819025541/Alola_USUL.png/1200px-Alola_USUL.png" class="card-img nav-pills-img" alt="...">
+                    <div class="card-img-overlay p-4">
+                      <h5 class="card-title fs-2">Alola</h5>
+                      <p class="card-text font-monospace"> La región de la séptima generación de Pokémon, es un lugar exótico y lleno de vida. Con islas como Melemele, Akala y Ula-Ula, es un lugar lleno de sorpresas y desafíos únicos. Conoce a los Pokémon exclusivos de Alola y enfrentarte a los cuatro capitanes y al Alto Mando de la Liga Pokémon.</p>
                     </div>
                   </div>
                 </div>
@@ -228,7 +261,7 @@
             </div>
           </div>
           <!-- SECCIÓN CREADORES -->
-          <div class="row bg-info mt-1">
+          <div class="row bg-info mt-1 g-0">
             .
           </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
