@@ -19,7 +19,7 @@ const getData = async (id) => {
 const data = [];
 
 async function render() {
-  for (let index = 1; index <= 10; index++) {
+  for (let index = 1; index <= 1008; index++) {
     data.push(await getData(index));
     mostrarPokemon(await getData(index));
   }
@@ -30,24 +30,25 @@ render();
 
 function mostrarPokemon(a) {
   const div = document.createElement("div");
-  div.classList.add("col-3");
+  div.classList.add("col-12");
+  div.classList.add("col-sm-3");
   div.innerHTML = `
-   <div class="card text-center fs-3">
+   <div class="card text-center fs-5">
             <div class="card-header">
               <div class="row">
-                <p class="col-10 text-reset">${a.name}</p>
-                <p class="col-2 text-reset">${a.id}</p>
+                <p class="col-6 text-reset text-center">${a.name}</p>
+                <p class="col-4 text-reset text-center">${a.id}</p>
               </div>
             </div>
             <div class="card-body">
               <img
-                src="../assets/PokemonDiamante.jpg"
+                src="${a.sprites.front_default} "
                 class="img-fluid m-auto"
                 alt="..."
               />
               <div class="card-title row">
-                <p class="col-6">weight</p>
-                <p class="col-6">height</p>
+                <p class="col-auto">height : ${a.height} ft</p>
+                <p class="col-auto">weight: ${a.weight} kg</p>
               </div>
               <div class="card-text">
                 <ul class="list-group list-group-flush">
