@@ -1,3 +1,20 @@
 .ok{
     background-color: black;
 }
+.pokedex{
+    background-image: url(../assets/pattern.png);
+}
+.bgblue{
+    background-color: #387DAE;
+}
+.light{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px 100px / 120px;
+}
+.title{
+    color: white;   
+    font-family: 'Pokemon Solid', sans-serif;
+}
+.width{
+    width: 15%;
+}
