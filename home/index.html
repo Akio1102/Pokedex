@@ -13,35 +13,52 @@
 <body>
     <!-- NAVBAR -->
     <header>
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../assets/pikachu.png" width="60rem" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#inicio"><i class="bi bi-house"></i> Home</a>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark text-center">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../assets/pikachu.png" width="60rem" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#inicio"><i class="bi bi-house"></i> Home</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="nav-link active" aria-current="page" href="#historia"><i class="bi bi-book"></i> Historia</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="nav-link active" aria-current="page" href="#pokedex"><i class="bi bi-search"></i> Pokédex</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="nav-link active" aria-current="page" href="#juegos" aria-disabled="true"><i class="bi bi-globe-americas"></i> Regiones</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="nav-link active" aria-current="page" href="#regiones" aria-disabled="true"><i class="bi bi-joystick"></i> Juegos</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="bi bi-plus-circle"></i> Ver más
+                          </a>
+                          <ul class="dropdown-menu mr-5" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Cartas</a></li>
+                            <li><a class="dropdown-item" href="#">Mangas</a></li>
+                            <li><a class="dropdown-item" href="#">Guías</a></li>
+                            <li><a class="dropdown-item" href="#">Streamers</a></li>
+                            <li><a class="dropdown-item" href="#">ROMS</a></li>
+                            <li><a class="dropdown-item" href="#">Películas</a></li>
+                            <li><a class="dropdown-item" href="#">Generaciones</a></li>
+                            <li><a class="dropdown-item" href="#">Campeones</a></li>
+                            <li><a class="dropdown-item" href="#">Torneos</a></li>
+                            <li><a class="dropdown-item" href="#">Novedades</a></li>
+                          </ul>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active" aria-current="page" href="#historia"><i class="bi bi-book"></i> Historia</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active" aria-current="page" href="#pokedex"><i class="bi bi-search"></i> Pokédex</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active" aria-current="page" href="#juegos" aria-disabled="true"><i class="bi bi-globe-americas"></i> Regiones</a>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link active" aria-current="page" href="#regiones" aria-disabled="true"><i class="bi bi-joystick"></i> Juegos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
     <div class="container-fluid g-0">
       <!-- INICIO -->
         <div id="inicio" class="inicio row flex-column flex-lg-row text-center g-0 ">
@@ -162,19 +179,22 @@
             <button type="button" class="btn btn-light"> ¡Entra a nuestra Pokédex!</button>
           </div>
         </div>
-        <!-- DIVISIÓN COOL -->
-
         <!-- REDIRECCIÓN JUEGOS -->
-        <div id="juegos" class="juegos row p-3 mt-1 text-center g-0 d-flex align-items-center">
+        <div id="juegos" class="juegos row p-3 mt-1 text-center g-0 d-flex align-items-center justify-content-evenly">
           <!-- video -->
-          <div class="col-12 col-lg-6 order-lg-2">
-            <div class="bg-success p-3">
-              <div class="col-6 bg-danger"></div>*2
+          <div class="col-12 col-lg-5 order-lg-2">
+            <div class="p-4">
+              <div class="col-6 h-100 w-100">
+                <img src="https://i.blogs.es/f93a47/pokemon-games/840_560.jpg" alt="juegos-pokemon" class="img-fluid">
+              </div>
             </div>
           </div>
           <div class="col-12 col-lg-6">
-            <div class="col p-3">
-              <div class="bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci repellendus libero tempora temporibus, aliquam tempore ea natus enim maiores fugit quidem dolor suscipit quos nostrum exercitationem eum eaque non et.</div>
+            <div class="col-12 my-4 p-3">
+              <h4> Descubre la colección completa de juegos de la franquicia.</h4>
+            </div>
+            <div class="col-12 p-3">
+              <h5>Desde su primera aparición, los juegos de Pokémon han cautivado a jugadores de todo el mundo. A lo largo de los años, han evolucionado y expandido su universo de criaturas y aventuras, y hoy en día cuentan con una amplia variedad de títulos que ofrecen desafíos, estrategias y diversión para todos los gustos. <br>Desde los clásicos juegos de Game Boy hasta las últimas entregas para Nintendo Switch, descubre la historia de los juegos de Pokémon y prepárate para sumergirte en un mundo lleno de aventuras y emociones.</h5>
             </div>
             <div class="p-3">
               <button type="button" class="btn btn-light">Descubre los demás juegos</button>
@@ -182,7 +202,7 @@
           </div>
           </div>
           <!-- REDIRECCIÓN REGIONES -->
-          <div id="regiones" class="regiones row mt-1 p-4 g-0 d-flex justify-content-center">
+          <div id="regiones" class="regiones row mt-1 p-4 pb-5 g-0 d-flex justify-content-center">
             <div class="col-12 text-center">
               <div class="mt-5">
                 <h2>Regiones</h2>
@@ -260,10 +280,9 @@
             </div>
             <!-- botón -->
             <div class="col-12 p-3 text-center">
-              <button type="button" class="btn btn-light">Descubre más regiones</button>
+              <button type="button" class="btn btn-light mb-4">Descubre más regiones</button>
             </div>
           </div>
-          
           <!-- FOOTER -->
           <footer class="bg-dark text-white text-center text-lg-start">
             <div class="container text-center text-md-start pt-5">
