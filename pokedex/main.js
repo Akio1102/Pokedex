@@ -19,7 +19,7 @@ const getData = async (id) => {
 const data = [];
 
 async function render() {
-  for (let index = 1; index <= 1008; index++) {
+  for (let index = 1; index <= 10; index++) {
     data.push(await getData(index));
     mostrarPokemon(await getData(index));
   }
@@ -28,31 +28,43 @@ async function render() {
 }
 render();
 
-function mostrarPokemon(a) {
+function mostrarPokemon(pokemon) {
+  let tipos = pokemon.types.map(
+    (type) => `<p class="${type.type.name}">${type.type.name}</p>`
+  );
+  tipos = tipos.join("");
+
+  let pokeID = pokemon.id.toString();
+  if (pokeID.length === 1) {
+    pokeID = "00" + pokeID;
+  } else if (pokeID.length === 2) {
+    pokeID = "0" + pokeID;
+  }
+
   const div = document.createElement("div");
   div.classList.add("col-12");
   div.classList.add("col-sm-3");
   div.innerHTML = `
    <div class="card text-center fs-5">
             <div class="card-header">
-              <div class="row">
-                <p class="col-6 text-reset text-center">${a.name}</p>
-                <p class="col-4 text-reset text-center">${a.id}</p>
+              <div class="row justify-content-center">
+                <p class="col-auto text-reset text-center">${pokemon.name}</p>
+                <p class="col-auto text-reset text-center">${pokeID}</p>
               </div>
             </div>
             <div class="card-body">
               <img
-                src="${a.sprites.front_default} "
+                src="${pokemon.sprites.other["official-artwork"].front_default}"
                 class="img-fluid m-auto"
-                alt="..."
+                alt="${pokemon.name}"
               />
-              <div class="card-title row">
-                <p class="col-auto">height : ${a.height} ft</p>
-                <p class="col-auto">weight: ${a.weight} kg</p>
+              <div class="card-title row justify-content-center">
+                <p class="col-auto">height : ${pokemon.height} ft</p>
+                <p class="col-auto">weight: ${pokemon.weight} kg</p>
               </div>
               <div class="card-text">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Tipos</li>
+                  ${tipos}
                 </ul>
               </div>
             </div>
