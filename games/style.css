@@ -13,8 +13,11 @@
 }
 .title{
     color: white;   
-    font-family: 'Pokemon Solid', sans-serif;
 }
 .width{
     width: 15%;
+}
+.lack{
+    z-index: 10;
+    margin-top: 300px;
 }
