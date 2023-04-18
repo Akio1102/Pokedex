@@ -3,6 +3,30 @@
     font-family: 'Exo 2', sans-serif;
 }
 
+body {
+    background-image: url(../assets/manga-background.png);
+    backdrop-filter: brightness(60%);
+}
+
 h1 {
     font-family: 'Press Start 2P', cursive;
+}
+
+.texto {
+    background-color: rgba(240, 248, 255, 0.575);
+    border-radius: 3rem;
+}
+
+.card {
+    height: fit-content;
+}
+
+.card-img {
+    object-fit: cover;
+    height: 25vh;
+}
+
+.scroll-text {
+    overflow-y: scroll;
+    height: 15vh;
 }
