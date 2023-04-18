@@ -19,7 +19,7 @@ const getData = async (id) => {
 const data = [];
 
 async function render() {
-  for (let index = 1; index <= 10; index++) {
+  for (let index = 1; index <= 1008; index++) {
     data.push(await getData(index));
     mostrarPokemon(await getData(index));
   }
@@ -30,7 +30,8 @@ render();
 
 function mostrarPokemon(pokemon) {
   let tipos = pokemon.types.map(
-    (type) => `<p class="${type.type.name}">${type.type.name}</p>`
+    (type) => 
+    `<li class="list-group-item rounded-pill  text-light ${type.type.name}">${type.type.name[0].toUpperCase()+type.type.name.substring(1)}</li>`
   );
   tipos = tipos.join("");
 
@@ -41,15 +42,17 @@ function mostrarPokemon(pokemon) {
     pokeID = "0" + pokeID;
   }
 
+  let pokeName = pokemon.name[0].toUpperCase() + pokemon.name.substring(1)
+  
+
   const div = document.createElement("div");
-  div.classList.add("col-12");
-  div.classList.add("col-sm-3");
+  div.classList.add("col-12","col-sm-6","col-lg-4","col-xl-3");
   div.innerHTML = `
    <div class="card text-center fs-5">
             <div class="card-header">
-              <div class="row justify-content-center">
-                <p class="col-auto text-reset text-center">${pokemon.name}</p>
-                <p class="col-auto text-reset text-center">${pokeID}</p>
+              <div class="row justify-content-center fs-4">
+                <p class="col-auto text-reset text-center pt-3">${pokeName}</p>
+                <p class="col-auto text-reset text-center pt-3">${pokeID}</p>
               </div>
             </div>
             <div class="card-body">
@@ -59,11 +62,12 @@ function mostrarPokemon(pokemon) {
                 alt="${pokemon.name}"
               />
               <div class="card-title row justify-content-center">
-                <p class="col-auto">height : ${pokemon.height} ft</p>
-                <p class="col-auto">weight: ${pokemon.weight} kg</p>
+                <p class="col-auto fs-4">Height: ${pokemon.height} ft</p>
+                <p class="col-auto fs-4">Weight: ${pokemon.weight} kg</p>
               </div>
               <div class="card-text">
-                <ul class="list-group list-group-flush">
+              <p>Tipo Pokemon</p>
+                <ul class="list-group list-group-flush list-group-horizontal justify-content-evenly ">
                   ${tipos}
                 </ul>
               </div>

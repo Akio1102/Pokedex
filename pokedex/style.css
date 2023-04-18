@@ -2,61 +2,61 @@ body{
   background-image: url(../assets/bg-Pokedex.png);
   
 }
-.btn-all {
+.all {
   background-color: rgb(39, 167, 118);
 }
-.btn-steel {
+.steel {
   background-color: #60a1b8;
 }
-.btn-water {
+.water {
   background-color: #2980ef;
 }
-.btn-bug {
+.bug {
   background-color: #91a119;
 }
-.btn-dragon {
+.dragon {
   background-color: #5061e1;
 }
-.btn-electric {
+.electric {
   background-color: #fac001;
 }
-.btn-ghost {
+.ghost {
   background-color: #704170;
 }
-.btn-fire {
+.fire {
   background-color: #e62829;
 }
-.btn-fairy {
+.fairy {
   background-color: #f170f1;
 }
-.btn-ice {
+.ice {
   background-color: #3fd8ff;
 }
-.btn-fighting {
+.fighting {
   background-color: #ff8000;
 }
-.btn-normal {
+.normal {
   background-color: #9fa19f;
 }
-.btn-grass {
+.grass {
   background-color: #3fa129;
 }
-.btn-psychic {
+.psychic {
   background-color: #f04179;
 }
-.btn-rock {
+.rock {
   background-color: #afa981;
 }
-.btn-dark1 {
+.dark {
   background-color: #50413f;
 }
-.btn-ground {
+.ground {
   background-color: #915121;
 }
-.btn-poison {
+.poison {
   background-color: #9141cb;
 }
-.btn-flying {
+.flying {
   background-color: #81b9ef;
 }
 .bg-target{
