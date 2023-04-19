@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Press+Start+2P&display=swap%27');
+
+* {font-family: 'Exo 2', sans-serif;
+} 
+
 body{
   background-image: url(../assets/bg-Pokedex.png);
   
 }
+
+h1{
+  font-family: 'Press Start 2P', cursive;
+}
+
 .all {
   background-color: rgb(39, 167, 118);
 }
