@@ -1,6 +1,12 @@
+body{
+  background-image: url(../assets/bg-Pokedex.png); 
+}
 .img-responsive {
   object-fit: cover;
   height: 90vh;
   width: 100%;
   filter: brightness(60%);
+}
+.bg-cards {
+  background-color: rgba(199, 252, 255, 0.913);
 }
