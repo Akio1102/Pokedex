@@ -1,10 +1,7 @@
 const listaPokemon = document.getElementById("listaPokemon");
+const btnPoke = document.querySelectorAll(".btn-type");
 
 const url = `https://pokeapi.co/api/v2/pokemon`;
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   render();
-// });
 
 const getData = async (id) => {
   try {
@@ -16,22 +13,20 @@ const getData = async (id) => {
   }
 };
 
-const data = [];
-
 async function render() {
   for (let index = 1; index <= 1008; index++) {
-    data.push(await getData(index));
     mostrarPokemon(await getData(index));
   }
-  console.log(data);
-  //return data;
+  console.log("Fin");
 }
 render();
 
 function mostrarPokemon(pokemon) {
   let tipos = pokemon.types.map(
-    (type) => 
-    `<li class="list-group-item rounded-pill  text-light ${type.type.name}">${type.type.name[0].toUpperCase()+type.type.name.substring(1)}</li>`
+    (type) =>
+      `<li class="list-group-item rounded-pill  text-light ${type.type.name}">${
+        type.type.name[0].toUpperCase() + type.type.name.substring(1)
+      }</li>`
   );
   tipos = tipos.join("");
 
@@ -42,11 +37,10 @@ function mostrarPokemon(pokemon) {
     pokeID = "0" + pokeID;
   }
 
-  let pokeName = pokemon.name[0].toUpperCase() + pokemon.name.substring(1)
-  
+  let pokeName = pokemon.name[0].toUpperCase() + pokemon.name.substring(1);
 
   const div = document.createElement("div");
-  div.classList.add("col-12","col-sm-6","col-lg-4","col-xl-3");
+  div.classList.add("col-12", "col-sm-6", "col-lg-4", "col-xl-3");
   div.innerHTML = `
    <div class="card text-center fs-5">
             <div class="card-header">
@@ -76,3 +70,29 @@ function mostrarPokemon(pokemon) {
   `;
   listaPokemon.append(div);
 }
+
+btnPoke.forEach((boton) =>
+  boton.addEventListener("click", async (event) => {
+    const btnId = event.currentTarget.id;
+
+    listaPokemon.innerHTML = "";
+
+    for (let i = 1; i < 1008; i++) {
+      try {
+        const data = await fetch(`${url}/${i}`);
+        const result = await data.json();
+        if (btnId === "all") {
+          mostrarPokemon(result);
+        } else {
+          const btnTipos = result.types.map((type) => type.type.name);
+          if (btnTipos.some((btnTipos) => btnTipos.includes(btnId))) {
+            mostrarPokemon(result);
+          }
+        }
+        console.log("Fin Busqueda Por Button");
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  })
+);
