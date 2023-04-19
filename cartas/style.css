@@ -1,0 +1,21 @@
+* {
+    font-family: 'Exo 2', sans-serif;
+  }
+  
+  .main {
+      height: 75vh;
+      overflow-y: scroll;
+  }
+  
+  h4{
+      font-weight: bolder;
+      margin-top: 3rem;
+  }
+  h5{
+      font-weight: bolder;
+      margin-top: 3rem;
+  }
+  h6{
+      font-weight: bolder;
+      margin-top: 3rem;
+  }
