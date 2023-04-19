@@ -1,0 +1,6 @@
+.img-responsive {
+  object-fit: cover;
+  height: 90vh;
+  width: 100%;
+  filter: brightness(60%);
+}
