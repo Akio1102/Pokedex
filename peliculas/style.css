@@ -7,7 +7,22 @@ h1 {
     font-family: 'Press Start 2P', cursive;
 }
 
+body {
+    background-image: url(../assets/peliculas-background.png);
+    backdrop-filter: brightness(80%);
+}
+
+.texto {
+    background-color: rgba(240, 248, 255, 0.575);
+    border-radius: 3rem;
+}
+
 .card-img {
     object-fit: cover;
-    height: 25vh;
+    height: 55vh;
+}
+
+.scroll-text {
+    overflow-y: scroll;
+    height: 40vh;
 }
