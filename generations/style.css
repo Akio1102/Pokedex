@@ -1,4 +1,6 @@
-.gen3{
-    width: 100%;
-    object-fit: cover;
+body {
+  background-image: url(../assets/bg-Pokedex.png);
+}
+.bg-cards {
+  background-color: rgba(199, 199, 199, 0.855);
 }
