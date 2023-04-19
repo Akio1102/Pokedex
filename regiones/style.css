@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Press+Start+2P&display=swap');
+* {
+    font-family: 'Exo 2', sans-serif;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+}
+h4 {
+    font-family: 'Press Start 2P', cursive;
+}
+.card-img {
+    object-fit: cover;
+    height: 30vh;
+}
+.card {
+    margin-bottom: 35px;
+}
