@@ -1,0 +1,30 @@
+.ok{
+    background-color: black;
+}
+.pokedex{
+    background-image: url(../assets/pattern.png);
+}
+.bgblue{
+    background-color: #387DAE;
+}
+.light{
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px 100px / 120px;
+}
+.title{
+    color: white;   
+}
+.width{
+    width: 15%;
+}
+.lack{
+    z-index: 10;
+    margin-top: 300px;
+}
+.lack2{
+    z-index: 10;
+    margin-top: 220px;
+}
+.ok2{
+    background-color: rgba(0, 0, 0, 0.5);
+}
