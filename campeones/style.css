@@ -1,0 +1,20 @@
+.title{
+    color: white;   
+}
+.pokebg{
+    background-image: url(../assets/champ.png);
+}
+.ok{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.pokebg2{
+    background-image: url(../assets/champ2.png);
+    border-radius: 20% / 50%;
+}
+.bord{
+    border-radius: 50px;
+}
+.ok2{
+    background-color: rgba(0, 0, 0, 1);
+}
