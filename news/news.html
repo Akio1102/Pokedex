@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novedades</title>
+    <link
+    rel="shortcut icon"
+    href="../assets/pokebola.png"
+    type="image/x-icon"
+  />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+    defer
+  ></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark text-center">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"
+              ><img src="../assets/pikachu.png" width="60rem" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-center"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../home/index.html"
+                    ><i class="bi bi-house"></i> Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../history/history.html"
+                    ><i class="bi bi-book"></i> Historia</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../pokedex/pokedex.html"
+                    ><i class="bi bi-search"></i> Pokédex</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../regiones/regiones.html"
+                    aria-disabled="true"
+                    ><i class="bi bi-globe-americas"></i> Regiones</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../games/games.html"
+                    aria-disabled="true"
+                    ><i class="bi bi-joystick"></i> Juegos</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="bi bi-plus-circle"></i> Ver más
+                  </a>
+                  <ul class="dropdown-menu mr-5" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="../cartas/cartas.html"
+                        ><i class="bi bi-card-text"></i> Cartas</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../mangas/mangas.html"
+                        ><i class="bi bi-journal-richtext"></i> Mangas</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../guias/guias.html"
+                        ><i class="bi bi-map-fill"></i> Guías</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../twitch/twitch.html"
+                        ><i class="bi bi-twitch"></i> Streamers</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../roms/roms.html"
+                        ><i class="bi bi-sd-card-fill"></i> ROMS</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../peliculas/peliculas.html"
+                        ><i class="bi bi-file-earmark-break-fill"></i>
+                        Películas</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../generations/generations.html"
+                        ><i class="bi bi-reception-4"></i> Generaciones</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../campeones/campeones.html"
+                        ><i class="bi bi-trophy-fill"></i> Campeones</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="../tournaments/tournaments.html"
+                        ><i class="bi bi-trophy"></i> Torneos</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./news.html"
+                        ><i class="bi bi-newspaper"></i> Novedades</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+      <h1 class="text-center">Noticias Pokemon</h1>
+      <div class="row my-2">
+          <div class="col-12 col-sm-6 text-center">
+            <div class="card h-100">
+              <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2-es-xl/img/watch-pokemon-tv/_tiles/stunts/shell-ebration/shell-ebration-169-es.png"
+              class="img-fluid rounded-start"
+              alt="1 Noticia"
+              title="1 Noticia"
+            />
+              <div class="card-body">
+                <h5 class="card-title">Disfruta de los Pokémon con caparazón en TV Pokémon</h5>
+                <p class="card-text">No importa si batallan, desarrollan un vínculo con sus Entrenadores o evolucionan, estos Pokémon traen los caparazones cargados de entretenimiento.</p>
+                <a href="https://www.pokemon.com/el/noticias-pokemon/disfruta-de-los-pokemon-con-caparazon-en-tv-pokemon" class="btn btn-outline-primary" target="_target">Leer Más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 text-center">
+            <div class="card h-100">
+              <img
+                  src="https://www.pokemon.com/static-assets/content-assets/cms2-es-xl/img/trading-card-game/_tiles/strategy/tcg-rotation/2023/2023-tcg-rotation-169-es.png"
+                  class="img-fluid rounded-start"
+                  alt="2 Noticia"
+                  title="2 Noticia"
+                />
+              <div class="card-body">
+                <h5 class="card-title">Estrategias para la rotación del formato Estándar de JCC Pokémon en 2023
+                </h5>
+                <p class="card-text">Descubre qué cartas y barajas se verán afectadas para prepararte para tu próximo gran combate.</p>
+                <a href="https://www.pokemon.com/el/estrategia/estrategias-para-la-rotacion-del-formato-estandar-de-jcc-pokemon-en-2023" class="btn btn-outline-primary" target="_target">Leer Más</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="border-info border-bottom h-100"></div>
+      <div class="row g-2 my-2">
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2-es-xl/img/watch-pokemon-tv/_tiles/stunts/shell-ebration/shell-ebration-169-es.png"
+              class="img-fluid rounded-start"
+              alt="1 Noticia"
+              title="1 Noticia"
+            />
+              <div class="card-body">
+                <h5 class="card-title">Disfruta de los Pokémon con caparazón en TV Pokémon</h5>
+                <p class="card-text">No importa si batallan, desarrollan un vínculo con sus Entrenadores o evolucionan, estos Pokémon traen los caparazones cargados de entretenimiento.</p>
+                <a href="https://www.pokemon.com/el/noticias-pokemon/disfruta-de-los-pokemon-con-caparazon-en-tv-pokemon" class="btn btn-outline-primary" target="_target">Leer Más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2-es-xl/img/trading-card-game/_tiles/sv/sv01/top-cards/sv01-top-cards-169-es.png"
+              class="img-fluid rounded-start"
+              alt="1 Noticia"
+              title="1 Noticia"
+            />
+              <div class="card-body">
+                <h5 class="card-title">Las mejores cartas de competencia de Escarlata y Púrpura de JCC Pokémon
+                </h5>
+                <p class="card-text">Prepárate para una nueva era en JCC Pokémon y descubre las cartas más impactantes de la expansión Escarlata y Púrpura.</p>
+                <a href="https://www.pokemon.com/el/estrategia/las-mejores-cartas-de-competencia-de-escarlata-y-purpura-de-jcc-pokemon" class="btn btn-outline-primary" target="_target">Leer Más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2-es-xl/img/attend-events/_tiles/2023/in-store-competitions/play-pokemon-169.png"
+              class="img-fluid rounded-start"
+              alt="1 Noticia"
+              title="1 Noticia"
+            />
+              <div class="card-body">
+                <h5 class="card-title">Vuelven a las tiendas las competencias presenciales de Play! Pokémon
+                </h5>
+                <p class="card-text">Los jugadores de JCC Pokémon y Pokémon GO podrán depurar su técnica y conseguir Championship Points a partir de abril de 2023, mientras que las competencias locales de videojuegos volverán en mayo.
+                </p>
+                <a href="https://www.pokemon.com/el/noticias-pokemon/vuelven-a-las-tiendas-las-competencias-presenciales-de-play-pokemon" class="btn btn-outline-primary" target="_target">Leer Más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+                  src="https://www.pokemon.com/static-assets/content-assets/cms2-es-xl/img/trading-card-game/_tiles/strategy/tcg-rotation/2023/2023-tcg-rotation-169-es.png"
+                  class="img-fluid rounded-start"
+                  alt="2 Noticia"
+                  title="2 Noticia"
+                />
+              <div class="card-body">
+                <h5 class="card-title">Estrategias para la rotación del formato Estándar de JCC Pokémon en 2023
+                </h5>
+                <p class="card-text">Descubre qué cartas y barajas se verán afectadas para prepararte para tu próximo gran combate.</p>
+                <a href="https://www.pokemon.com/el/estrategia/estrategias-para-la-rotacion-del-formato-estandar-de-jcc-pokemon-en-2023" class="btn btn-outline-primary" target="_target">Leer Más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2-es-xl/img/watch-pokemon-tv/_tiles/season16/season16-on-ptv-live-169-es.png"
+              class="img-fluid rounded-start"
+              alt="1 Noticia"
+              title="1 Noticia"
+            />
+              <div class="card-body">
+                <h5 class="card-title">Llegan a TV Pokémon más episodios de Negro y Blanco: Aventuras en Unova y más allá
+                </h5>
+                <p class="card-text">Tras un largo viaje, Ash por fin está listo para aceptar el desafío de la Liga Unova en la temporada 16 de la Serie Pokémon.
+                </p>
+                <a href="https://www.pokemon.com/el/noticias-pokemon/llegan-a-tv-pokemon-mas-episodios-de-negro-y-blanco--aventuras-en-unova-y-mas-alla" class="btn btn-outline-primary" target="_target">Leer Más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2-es-xl/img/watch-pokemon-tv/_tiles/season16/ptv-season16-announce-169-es.jpg"
+              class="img-fluid rounded-start"
+              alt="1 Noticia"
+              title="1 Noticia"
+            />
+              <div class="card-body">
+                <h5 class="card-title">Negro y Blanco: Aventuras en Unova y más allá llega a TV Pokémon
+                </h5>
+                <p class="card-text">El viaje de Ash a través de la región Unova está llegando a su fin, pero antes, tendrá que desafiar a la Liga Unova en la 16.ª temporada de la Serie Pokémon.
+                </p>
+                <a href="https://www.pokemon.com/el/noticias-pokemon/negro-y-blanco-aventuras-en-unova-y-mas-alla-llega-a-tv-pokemon" class="btn btn-outline-primary" target="_target">Leer Más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2-es-xl/img/watch-pokemon-tv/_tiles/stunts/berry/berry-169-es.png"
+              class="img-fluid rounded-start"
+              alt="1 Noticia"
+              title="1 Noticia"
+            />
+              <div class="card-body">
+                <h5 class="card-title">Bayas y más bayas en TV Pokémon
+                </h5>
+                <p class="card-text">Demuestra cuánto te gusta Lechonk y disfruta de una colección de episodios de la serie Pokémon donde las bayas, una de sus comidas favoritas, son las protagonistas.
+                </p>
+                <a href="https://www.pokemon.com/el/noticias-pokemon/bayas-y-mas-bayas-en-tv-pokemon" class="btn btn-outline-primary" target="_target">Leer Más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2-es-xl/img/trading-card-game/_tiles/tcgl/sv/sv01/tcgl-169-latam.png"
+              class="img-fluid rounded-start"
+              alt="1 Noticia"
+              title="1 Noticia"
+            />
+              <div class="card-body">
+                <h5 class="card-title">Combate con Escarlata y Púrpura de JCC Pokémon en el Juego de Cartas Coleccionables Pokémon Live
+                </h5>
+                <p class="card-text">Potencia tu colección con las nuevas cartas de JCC Pokémon de Escarlata y Púrpura y comienza a combatir con las barajas del pase de combate de Miraidon ex y Gardevoir ex.
+                </p>
+                <a href="https://www.pokemon.com/el/noticias-pokemon/combate-con-escarlata-y-purpura-de-jcc-pokemon-en-el-juego-de-cartas-coleccionables-pokemon-live" class="btn btn-outline-primary" target="_target">Leer Más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card h-100 text-center">
+              <img
+              src="https://www.pokemon.com/static-assets/content-assets/cms2-es-xl/img/trading-card-game/_tiles/sv/updates/sv-169-es.png"
+              class="img-fluid rounded-start"
+              alt="1 Noticia"
+              title="1 Noticia"
+            />
+              <div class="card-body">
+                <h5 class="card-title">Escarlata y Púrpura de JCC Pokémon renueva la estética de las cartas de JCC Pokémon
+                </h5>
+                <p class="card-text">Descubre más información sobre los cambios estéticos que llegarán a JCC Pokémon con la próxima serie Escarlata y Púrpura.
+                </p>
+                <a href="https://www.pokemon.com/el/noticias-pokemon/escarlata-y-purpura-de-jcc-pokemon-renueva-la-estetica-de-las-cartas-de-jcc-pokemon" class="btn btn-outline-primary" target="_target">Leer Más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 text-center">
+            <a href="https://www.pokemon.com/el/noticias-pokemon" class="btn btn-primary my-3" target="_target">Cargar Más Noticias</a>          
+          </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark">
+        <div class="container text-center text-md-start pt-3">
+          <div class="row mt-3 text-light">
+            <div class="col-md-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">The Pokémon Company</h6>
+              <p>
+                Es una compañía japonesa creada para controlar el merchandising y
+                las licencias de los productos de la franquicia Pokémon. Está
+                compuesta, a partes iguales, por Nintendo, Game Freak y Creatures.
+                De acuerdo a su cronograma, sus actividades comenzaron en 1998 con
+                la apertura del Centro Pokémon de Tokio.
+              </p>
+            </div>
+            <div class="col-md-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Juegos</h6>
+              <p>
+                <a
+                  href="https://scarletviolet.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                  >Pokémon Escarlata y Púrpura
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://legends.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                >
+                  Leyendas Pokémon Arceus</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://diamondpearl.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                  >Pokémon Diamante Brillante / Perla Reluciente</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://unite.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                  >Pokémon Unite</a
+                >
+              </p>
+            </div>
+            <div class="col-md-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Ayuda</h6>
+              <p>
+                <a
+                  href="https://www.pokemon.com/es/noticias-pokemon"
+                  class="text-reset"
+                  target="_blank"
+                  >Novedades</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://support.pokemon.com/hc/es"
+                  class="text-reset"
+                  target="_blank"
+                  >Servicio de atención al cliente</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://corporate.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                  >Sobre nuestra compañía</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.pokemon.com/es/pais-region/"
+                  class="text-reset"
+                  target="_blank"
+                  >Seleccionar país o región</a
+                >
+              </p>
+            </div>
+            <div class="col-md-3 mx-auto mb-4">
+              <h5 class="text-uppercase fw-bold mb-4">© 2023 Copyright:</h5>
+              <p>
+                <i class="bi bi-github me-2 fs-4"></i>
+                <a
+                  href="https://github.com/mcamaya"
+                  class="text-reset"
+                  target="_blank"
+                  >Camila Amaya</a
+                >
+              </p>
+              <p>
+                <i class="bi bi-github me-2 fs-4"></i>
+                <a
+                  href="https://github.com/SHADOW-LUCKY"
+                  class="text-reset"
+                  target="_blank"
+                  >Nicolas Ordoñez</a
+                >
+              </p>
+              <p>
+                <i class="bi bi-github me-2 fs-4"></i>
+                <a
+                  href="https://github.com/Akio1102"
+                  class="text-reset"
+                  target="_blank"
+                  >Cristian Diaz</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
