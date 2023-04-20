@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Press+Start+2P&display=swap');
+* {
+    font-family: 'Exo 2', sans-serif;
+  }
+  
+  body {
+    background-image: url(../assets/cartas-background.jpeg);
+  }
+
+  h1 {
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgba(240, 248, 255, 0.884);
+    border-radius: 5rem;
+  }
+
+  .contenedor {
+    background-color: darkslategray;
+    height: fit-content;
+  }
+
+  .main {
+      height: 72vh;
+      overflow-y: scroll;
+  }
+  
+  h4{
+      font-weight: bolder;
+      margin-top: 3rem;
+  }
+  h5{
+      font-weight: bolder;
+      margin-top: 3rem;
+  }
+  h6{
+      font-weight: bolder;
+      margin-top: 3rem;
+  }

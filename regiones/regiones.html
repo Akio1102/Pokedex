@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regiones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../assets/pokebola.png" type="image/x-icon">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark text-center">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="../assets/pikachu.png" width="60rem" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../home/index.html"
+                  ><i class="bi bi-house"></i> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../history/history.html"
+                  ><i class="bi bi-book"></i> Historia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pokedex/pokedex.html"
+                  ><i class="bi bi-search"></i> Pokédex</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../regiones/regiones.html"
+                  aria-disabled="true"
+                  ><i class="bi bi-globe-americas"></i> Regiones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../games/games.html"
+                  aria-disabled="true"
+                  ><i class="bi bi-joystick"></i> Juegos</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-plus-circle"></i> Ver más
+                </a>
+                <ul class="dropdown-menu mr-5" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="../cartas/cartas.html"
+                      ><i class="bi bi-card-text"></i> Cartas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../mangas/mangas.html"
+                      ><i class="bi bi-journal-richtext"></i> Mangas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../guias/guias.html"
+                      ><i class="bi bi-map-fill"></i> Guías</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../twitch/twitch.html"
+                      ><i class="bi bi-twitch"></i> Streamers</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../roms/roms.html"
+                      ><i class="bi bi-sd-card-fill"></i> ROMS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../peliculas/peliculas.html"
+                      ><i class="bi bi-file-earmark-break-fill"></i>
+                      Películas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../generations/generations.html"
+                      ><i class="bi bi-reception-4"></i> Generaciones</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../campeones/campeones.html"
+                      ><i class="bi bi-trophy-fill"></i> Campeones</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../tournaments/tournaments.html"
+                      ><i class="bi bi-trophy"></i> Torneos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./news.html"
+                      ><i class="bi bi-newspaper"></i> Novedades</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+    <!-- MAIN CONTENT -->
+    <div class="my-5 d-flex justify-content-center p-3">
+      <h1>Regiones de Pokémon</h1>
+    </div>
+    <!-- SERIE PRINCIPAL CARDS -->
+    <div class="ms-5 mt-5 p-3 d-flex justify-content-start">
+      <h4>Regiones de la serie principal</h4>
+    </div>
+    <div class="row d-flex justify-content-around p-5">
+      <!-- card -->
+      <div class="card g-0" style="width: 500px;">
+        <img class="img-fluid card-img" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/5/5b/latest/20180712231931/Mapa_de_Kanto_LGPE.png/1200px-Mapa_de_Kanto_LGPE.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Kanto</h3>
+          <p class="card-text">Los Pokémon iniciales son: Bulbasaur, Charmander y Squirtle. En Pokémon Amarillo tu inicial es Pikachu y el del rival es Eevee. El profesor es Oak y su ciudad principal es Ciudad Azafrán.</p>
+          <p>Los protagonistas de esta Región en el anime son Ash Ketchum, Misty y Brock.</p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card g-0" style="width: 500px;">
+        <img class="img-fluid card-img" src="../assets/Islas_Sete.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Islas Sete</h3>
+          <p class="card-text">Este archipiélago se encuentra cerca de Kanto y está formado por nueve islas. Es exclusivo de los videojuegos Pokémon Rojo Fuego y Verde Hoja. No obstante, dos de sus islas, la Roca Ombligo y la Isla Origen, se puede visitar en Pokémon Esmeralda mediante un evento especial.</p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card g-0" style="width: 500px;">
+        <img class="img-fluid card-img" src="https://4.bp.blogspot.com/-igJCOrYd89E/XFY0eEu3DrI/AAAAAAAAEfE/arbrDrP8mCIzMMWeAoujHV2JuOEGF95MQCLcBGAs/s1600/Johto_HGSS.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Johto</h3>
+          <p class="card-text">En esta región transcurren los videojuegos Pokémon Oro, Plata, Cristal, Oro HeartGold y Plata SoulSilver.</p>
+          <p>Los Pokémon iniciales son: Chikorita, Cyndaquil y Totodile. El profesor es Elm, mientras que Ciudad Trigal es la principal de todas sus ciudades.</p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card g-0" style="width: 500px;">
+        <img class="img-fluid card-img" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/a/af/latest/20150228012617/Mapa_de_Hoenn_ROZA.png/1200px-Mapa_de_Hoenn_ROZA.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Hoenn</h3>
+          <p class="card-text">En esta región transcurren los videojuegos Pokémon Rubí, Zafiro, Esmeralda, Rubí Omega y Zafiro Alfa.</p>
+          <p>Los Pokémon iniciales son: Treecko, Torchic y Mudkip. El profesor es Abedul. Las ciudades más significativas de Hoenn son Ciudad Portual, Ciudad Calagua y Ciudad Malvalona, siendo esta última la más grande (solo en Pokémon Rubí Omega y Pokémon Zafiro Alfa, en las versiones originales Ciudad Calagua era la ciudad más grande).</p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card g-0" style="width: 500px;">
+        <img class="img-fluid card-img" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/d/d2/latest/20210825190744/Sinnoh_DBPR.png/1200px-Sinnoh_DBPR.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Sinnoh</h3>
+          <p class="card-text">En esta región transcurren los videojuegos Pokémon Diamante, Perla y Platino.</p>
+          <p>Los Pokémon iniciales son: Turtwig, Chimchar y Piplup. El profesor es Serbal. Su ciudad principal es Ciudad Jubileo.</p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card g-0" style="width: 500px;">
+        <img class="img-fluid card-img" src="https://areajugones.sport.es/wp-content/uploads/2020/12/teselia-pokemon-1080x609.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Teselia</h3>
+          <p class="card-text">La región de Teselia (Unova en inglés) está inspirada en la isla de Manhattan. Su ciudad principal es Ciudad Porcelana. En esta región transcurren los videojuegos Pokémon Negro y Blanco y Pokémon Negro 2 y Blanco 2.</p>
+          <p>Los Pokémon iniciales son: Snivy, Tepig y Oshawott. La profesora es Encina, quien se encuentra en Pueblo Arcilla.</p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card g-0" style="width: 500px;">
+        <img class="img-fluid card-img" src="https://images.wikidexcdn.net/mwuploads/wikidex/7/7e/latest/20140917104423/Mapa_de_Kalos_XY_se%C3%B1alizado.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Kalos</h3>
+          <p class="card-text">La región de Kalos está basada en Francia y fue introducida en la sexta generación. En esta región transcurren los videojuegos Pokémon X y Pokémon Y. La región esta dividida en varias partes.</p>
+          <p>Los Pokémon iniciales son: Chespin, Fennekin y Froakie. El profesor es Ciprés, quien se encuentra en Ciudad Luminalia, principal ciudad de la región.</p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card g-0" style="width: 500px;">
+        <img class="img-fluid card-img" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/e/e5/latest/20170819025541/Alola_USUL.png/1200px-Alola_USUL.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Alola</h3>
+          <p class="card-text">La región de Alola está basada principalmente en Hawái, y está conformada por cuatro islas naturales y una artificial. Introducida para la séptima generación. En esta región transcurren los videojuegos Pokémon Sol, Pokémon Luna, Pokémon Ultrasol y Pokémon Ultraluna.</p>
+          <p>Los Pokémon iniciales son: Rowlet, Litten y Popplio. El profesor es Kukui.</p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card g-0" style="width: 500px;">
+        <img class="img-fluid card-img" src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/hc_1440x810/public/media/image/2019/02/Poke%CC%81mon%20Espada%20y%20Escudo%20Galar%20mapa.jpg?itok=AQdvdHFS" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Galar</h3>
+          <p class="card-text">La región de Galar parece estar basada en Inglaterra. Será introducida en la octava generación. En esta región transcurren los videojuegos Pokémon Espada y Pokémon Escudo.</p>
+          <p>Los Pokémon iniciales son: Grookey, Scorbunny y Sobble.</p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card g-0" style="width: 500px;">
+        <img class="img-fluid card-img" src="https://www.nintenderos.com/wp-content/uploads/2021/08/E9E4MA1XMAEtq3P-Cropped.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Hisui</h3>
+          <p class="card-text">La región de Hisui esta basada en como era la región de Sinnoh en la antigüedad. Será introducida en la octava generación. En esta región transcurre el videojuego Leyendas Pokémon: Arceus./p>
+          <p>Los Pokémon iniciales son: Rowlet, Cyndaquil y Oshawott.</p>
+        </div>
+      </div>
+
+      <!-- SECCIÓN 2 -->
+      <div class="ms-5 mt-5 p-3 d-flex justify-content-start">
+        <h4>Regiones exclusivas del anime</h4>
+      </div>
+      <!-- card -->
+      <div class="card g-0" style="width: 500px;">
+        <img class="img-fluid card-img" src="https://images.wikidexcdn.net/mwuploads/wikidex/thumb/3/30/latest/20080130033823/Archipi%C3%A9lago_Naranja.jpg/800px-Archipi%C3%A9lago_Naranja.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Archipiélago Naranja</h3>
+          <p class="card-text">La segunda temporada del anime transcurre en esta región, repartida en varias islas. No hay Pokémon inicial. La profesora es Ivy. </p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card g-0" style="width: 500px;">
+        <img class="img-fluid card-img" src="https://images.wikidexcdn.net/mwuploads/wikidex/7/75/latest/20130825051056/EP799_Isla_de_la_Islas_Decolora.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Islas Decolora/Decoloras</h3>
+          <p class="card-text">Está situado en algún sitio entre Kanto y Teselia. Parte de la decimosexta temporada del anime transcurre en esta región. No hay Pokémon iniciales y no tiene profesor. Está formada por cinco islas importantes.</p>
+          <p></p>
+        </div>
+      </div>
+
+      <!-- SECCIÓN 3 -->
+      <div class="ms-5 mt-5 p-3 d-flex justify-content-start">
+        <h4>Regiones de la serie Pokémon Ranger</h4>
+      </div>
+      <!-- card -->
+      <div class="card g-0" style="width: 500px;">
+        <img class="img-fluid card-img" src="https://images.wikidexcdn.net/mwuploads/wikidex/b/b2/latest/20171004145948/Floresta.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Floresta</h3>
+          <p class="card-text">En la región de Floresta transcurre el videojuego Pokémon Ranger. </p>
+          <p>Los Pokémon iniciales son Minun si elegiste ser chico o Plusle si elegiste ser chica. El profesor es Gobios. Su ciudad principal es Otonia.</p>
+        </div>
+      </div>
+      <!-- card -->
+      <div class="card g-0" style="width: 500px;">
+        <img class="img-fluid card-img" src="https://images.wikidexcdn.net/mwuploads/wikidex/8/8e/latest/20171103205122/Almia.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>Almia</h3>
+          <p class="card-text">En la región de Almia transcurre el videojuego Pokémon Ranger: Sombras de Almia. Viendo un mapa real se puede notar que se encuentra al suroeste de Sinnoh, en el brazo de la isla. Aquí es donde se encuentra la Unión Ranger.</p>
+          <p>Los Pokémon iniciales son Munchlax, Pachirisu o Starly, a lo largo del juego se podrán conseguir a los 3. El profesor es Gobios.</p>
+        </div>
+      </div>
+    
+    <!-- card -->
+    <div class="card g-0" style="width: 500px;">
+      <img class="img-fluid card-img" src="https://pm1.narvii.com/6249/096ffabdfe3ae59e57d767155a5ffc419e7056d8_00.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3>Oblivia</h3>
+        <p class="card-text">En la región de Oblivia transcurre el videojuego Pokémon Ranger: Trazos de luz. </p>
+        <p>El Pokémon inicial es Pichu kelele. El profesor es Gobios. </p>
+      </div>
+    </div>
+
+    <!-- SECCIÓN 4 -->
+    <div class="ms-5 mt-5 p-3 d-flex justify-content-start">
+      <h4>Regiones de otras series de videojuegos</h4>
+    </div>
+    <!-- card -->
+    <div class="card g-0" style="width: 500px;">
+      <img class="img-fluid card-img" src="../assets/Isla_Pok mon.webp" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3>Isla Pokémon</h3>
+        <p class="card-text">En la región de Floresta transcurre el videojuego Pokémon Ranger. </p>
+        <p>Los Pokémon iniciales son Minun si elegiste ser chico o Plusle si elegiste ser chica. El profesor es Gobios. Su ciudad principal es Otonia.</p>
+      </div>
+    </div>
+    <!-- card -->
+    <div class="card g-0" style="width: 500px;">
+      <img class="img-fluid card-img" src="https://www.guiasnintendo.com/4_Nintendo_64/PokemonStadium2/PokemonStadium2_sp/imagenes/iconos/MciublancaMapa.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h3>Ciudad Blanca</h3>
+        <p class="card-text">En Ciudad Blanca transcurre el videojuego Pokémon Stadium 2.</p>
+        <p>Puedes escoger un Pokémon inicial, aunque a veces es aleatorio. El profesor es Oak. </p>
+      </div>
+    </div>
+  
+  <!-- card -->
+  <div class="card g-0" style="width: 500px;">
+    <img class="img-fluid card-img" src="https://www.nintenderos.com/wp-content/uploads/2021/05/E08IwIGXIAM6td_-Cropped.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3>Pueblo Hierbabuena</h3>
+      <p class="card-text">En Pueblo Hierbabuena transcurre el videojuego Pokémon Channel. También contiene rutas utilizadas por Pokémon para hacer competiciones de carreras en Pokémon Dash. (Se entiende que la región tiene alguna clase de conexión, frontera o cercanía con la región de Kanto, ya que se puede ingresar en el Bosque Verde, aunque podría ser otro Bosque Verde).</p>
+    </div>
+  </div>
+  <!-- card -->
+  <div class="card g-0" style="width: 500px;">
+    <img class="img-fluid card-img" src="https://images.wikidexcdn.net/mwuploads/wikidex/2/2b/latest/20170826033341/Mapa_de_Aura_XD.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3>Aura</h3>
+      <p class="card-text">En la región de Aura transcurren los videojuegos Pokémon Colosseum y XD: Tempestad oscura.</p>
+      <p>Los Pokémon iniciales en Pokémon Colosseum son Espeon y Umbreon y en XD: Tempestad oscura el inicial es Eevee. El profesor es Cío. </p>
+    </div>
+  </div>
+  <!-- card -->
+  <div class="card g-0" style="width: 500px;">
+    <img class="img-fluid card-img" src="../assets/sol-region.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3>Sol</h3>
+      <p class="card-text">En la región de Sol transcurre el videojuego Pokémon Link!</p>
+      <p>No hay Pokémon iniciales. El profesor es Profesor P.</p>
+    </div>
+  </div>
+  <!-- card -->
+  <div class="card g-0" style="width: 500px;">
+    <img class="img-fluid card-img" src="https://www.pokepedia.fr/images/thumb/a/ac/Pok%C3%A9topia.jpg/640px-Pok%C3%A9topia.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3>Pokétopia</h3>
+      <p class="card-text">En Pokétopia transcurre el videojuego Pokémon Battle Revolution. Su nombre viene de Pokémon y utopía que significa paraíso.</p>
+      <p>Los Pokémon iniciales son: Monferno, Prinplup, Grotle, Gabite, Luxio, Staravia, Charmeleon, Wartortle, Ivysaur, Pidgeot, Dragonair y Rhyhorn. Se obtienen todos en los pases de préstamo. No hay profesor.</p>
+    </div>
+  </div>
+  <!-- card -->
+  <div class="card g-0" style="width: 500px;">
+    <img class="img-fluid card-img" src="../assets/Ransei.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3>Ransei</h3>
+      <p class="card-text">En la región de Ransei transcurre la trama del videojuego Pokémon Conquest. Esta región tiene la forma del Pokémon Arceus.</p>
+    </div>
+  </div>
+  <!-- card -->
+  <div class="card g-0" style="width: 500px;">
+    <img class="img-fluid card-img" src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3>Ferrum</h3>
+      <p class="card-text">En la región de Ferrum transcurre la trama del videojuego Pokkén Tournament. Posee su propia liga, aunque difiere de otras.</p>
+    </div>
+  </div>
+  <!-- card -->
+  <div class="card g-0" style="width: 500px;">
+    <img class="img-fluid card-img" src="../assets/Isla_carmonte.webp" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3>Isla Carmonte</h3>
+      <p class="card-text">En Isla Carmonte transcurre el videojuego Pokémon Duel. Es una gran isla artificial con grandes torres prestigiosas.</p>
+    </div>
+  </div>
+  </div>
+  
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center text-lg-start">
+        <div class="container text-center text-md-start pt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">The Pokémon Company</h6>
+              <p>
+                Es una compañía japonesa creada para controlar el merchandising y
+                las licencias de los productos de la franquicia Pokémon. Está
+                compuesta, a partes iguales, por Nintendo, Game Freak y Creatures.
+                De acuerdo a su cronograma, sus actividades comenzaron en 1998 con
+                la apertura del Centro Pokémon de Tokio.
+              </p>
+            </div>
+            <div class="col-md-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Juegos</h6>
+              <p>
+                <a
+                  href="https://scarletviolet.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                  >Pokémon Escarlata y Púrpura
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://legends.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                >
+                  Leyendas Pokémon Arceus</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://diamondpearl.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                  >Pokémon Diamante Brillante / Perla Reluciente</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://unite.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                  >Pokémon Unite</a
+                >
+              </p>
+            </div>
+            <div class="col-md-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Ayuda</h6>
+              <p>
+                <a
+                  href="https://www.pokemon.com/es/noticias-pokemon"
+                  class="text-reset"
+                  target="_blank"
+                  >Novedades</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://support.pokemon.com/hc/es"
+                  class="text-reset"
+                  target="_blank"
+                  >Servicio de atención al cliente</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://corporate.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                  >Sobre nuestra compañía</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.pokemon.com/es/pais-region/"
+                  class="text-reset"
+                  target="_blank"
+                  >Seleccionar país o región</a
+                >
+              </p>
+            </div>
+            <div class="col-md-3 mx-auto mb-4">
+              <h5 class="text-uppercase fw-bold mb-4">© 2023 Copyright:</h5>
+              <p>
+                <i class="bi bi-github me-2 fs-4"></i>
+                <a
+                  href="https://github.com/mcamaya"
+                  class="text-reset"
+                  target="_blank"
+                  >Camila Amaya</a
+                >
+              </p>
+              <p>
+                <i class="bi bi-github me-2 fs-4"></i>
+                <a
+                  href="https://github.com/SHADOW-LUCKY"
+                  class="text-reset"
+                  target="_blank"
+                  >Nicolas Ordoñez</a
+                >
+              </p>
+              <p>
+                <i class="bi bi-github me-2 fs-4"></i>
+                <a
+                  href="https://github.com/Akio1102"
+                  class="text-reset"
+                  target="_blank"
+                  >Cristian Diaz</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Press+Start+2P&display=swap');
+* {
+    font-family: 'Exo 2', sans-serif;
+}
+
+body {
+    background-image: url(https://farm7.static.flickr.com/6145/5945241764_0d82078f53.jpg);
+    backdrop-filter: brightness(80%);
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgba(240, 248, 255, 0.729);
+    padding: 2rem;
+    border-radius: 3rem;
+}
+h4 {
+    font-family: 'Press Start 2P', cursive;
+    background-color: rgba(240, 248, 255, 0.729);
+    padding: 2rem;
+    border-radius: 3rem;
+
+}
+.card-img {
+    object-fit: cover;
+    height: 30vh;
+}
+.card {
+    margin-bottom: 35px;
+    border: 3px solid black
+}

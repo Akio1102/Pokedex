@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Películas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../assets/pokebola.png" type="image/x-icon">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark text-center">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="../assets/pikachu.png" width="60rem" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../home/index.html"
+                  ><i class="bi bi-house"></i> Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../history/history.html"
+                  ><i class="bi bi-book"></i> Historia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pokedex/pokedex.html"
+                  ><i class="bi bi-search"></i> Pokédex</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../regiones/regiones.html"
+                  aria-disabled="true"
+                  ><i class="bi bi-globe-americas"></i> Regiones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../games/games.html"
+                  aria-disabled="true"
+                  ><i class="bi bi-joystick"></i> Juegos</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-plus-circle"></i> Ver más
+                </a>
+                <ul class="dropdown-menu mr-5" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="../cartas/cartas.html"
+                      ><i class="bi bi-card-text"></i> Cartas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../mangas/mangas.html"
+                      ><i class="bi bi-journal-richtext"></i> Mangas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../guias/guias.html"
+                      ><i class="bi bi-map-fill"></i> Guías</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../twitch/twitch.html"
+                      ><i class="bi bi-twitch"></i> Streamers</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../roms/roms.html"
+                      ><i class="bi bi-sd-card-fill"></i> ROMS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../peliculas/peliculas.html"
+                      ><i class="bi bi-file-earmark-break-fill"></i>
+                      Películas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../generations/generations.html"
+                      ><i class="bi bi-reception-4"></i> Generaciones</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../campeones/campeones.html"
+                      ><i class="bi bi-trophy-fill"></i> Campeones</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../tournaments/tournaments.html"
+                      ><i class="bi bi-trophy"></i> Torneos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./news.html"
+                      ><i class="bi bi-newspaper"></i> Novedades</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+    <!-- MAIN CONTENT -->
+    <div class="container-fluid p-5">
+      <div class="texto text-center p-5">
+        <h1 class="mt-2">Aventuras épicas en la gran pantalla: Películas de Pokémon</h1>
+        <h5 class="mt-5">Desde que se estrenó la primera película de Pokémon en 1998, las aventuras de Ash, Pikachu y sus amigos en la gran pantalla han sido emocionantes y llenas de acción. Cada película presenta una historia única que te sumerge aún más en el universo de Pokémon. Desde viajar a través de las regiones de Kanto, Johto, Hoenn, Sinnoh, Unova, Kalos y Alola, hasta encontrarse con legendarios Pokémon y salvar al mundo de malvados villanos, las películas de Pokémon te llevarán a un emocionante viaje lleno de diversión y emoción.</h5>
+      </div>
+      <!-- CARDS -->
+      <div class="row justify-content-evenly mt-5">
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSbktUfHSsHvarZyu7emLBizdgjTr5jcw66hOSRWGdg8w5hLMTf" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon: La pelicula (1998)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 18 de julio de 1998 (Japón)</li>
+                    <li>Recaudación: 172.7 millones USD</li>
+                    <li>Guion: Takeshi Shudo, Michael Haigney, Norman J. Grossfeld, John Touhey</li>
+                    <li>Canción destacada: Pokémon Theme</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Pok%C3%A9mon_Mewtwo_Returns.JPG" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon Mewtwo: El regreso (2000)</strong></h5>
+                <p class="card-text"><i>Masamitsu Hidaka</i></p>
+                <p><small>
+                  <ul>
+                    <li>Primer episodio: 30 de diciembre de 2000 (Japón)</li>
+                    <li>Producido por: Choji Yoshikawa (Japón); Jim Malone (EE. UU.)</li>
+                    <li>Música por: Shinji Miyazaki</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/Pok_mon_2_El_poder_de_uno-834819388-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon 2: El poder de uno (1999)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 21 de julio de 2000 (Estados Unidos)</li>
+                    <li>Recaudación: 133.9 millones USD</li>
+                    <li>Directores: Kunihiko Yuyama, Michael Haigney</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/Pok_mon_3_El_hechizo_de_los_Unown-513645003-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>
+                  Pokémon 3: El hechizo de los Unown (2000)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama, Michael Haigney</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 8 de julio de 2000 (Japón)</li>
+                    <li>Recaudación: 68.5 millones USD</li>
+                    <li>Productoras: OLM Inc., MÁS</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/Pok_mon_4Ever-659271362-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon 4Ever (2001)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 7 de julio de 2001 (Japón)</li>
+                    <li>Distribuida por: Tōhō</li>
+                    <li>Historia de: Satoshi Tajiri</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/Pok_mon_5_H_roes_Pok_mon_Latios_y_Latias-517871145-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon 5: Héroes Pokémon: Latios y Latias (2002)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 13 de julio de 2002 (Japón)</li>
+                    <li>Canción destacada: I Believe</li>
+                    <li>Música compuesta por: Shinji Miyazaki, Yasuhiro Kobayashi</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://www.themoviedb.org/t/p/original/iYqM25BuQSdmbOsboHDzwnAffNF.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon 6: Jirachi y los deseos (2003)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 19 de julio de 2003 (Japón)</li>
+                    <li>Recaudación: 4.5 miles de millones JPY</li>
+                    <li>Director artístico: Minoru Akiba</li>
+                    <li>Cinematografía: Hisao Shirai, Takaya Mizutani</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://www.ecartelera.com/carteles/14100/14121/002_m.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon 7: Destino Deoxys (2004)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 22 de julio de 2004 (Japón)</li>
+                    <li>Recaudación: 4.38 miles de millones JPY</li>
+                    <li>Año: 2004</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/pokemon_movie_8_lucario_and_the_mystery_of_mew-869048698-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon 8: Lucario y el misterio de Mew (2005)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 16 de julio de 2005 (Japón)</li>
+                    <li>Recaudación: 4.3 miles de millones JPY</li>
+                    <li>Cinematografía: Takaya Mizutani</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://www.cine.com/peliculas/6041/cartel/6041_cartel_orig.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon 9: Pokémon Ranger y el Templo del Mar (2006)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama, Armen Mazlumian</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 15 de julio de 2006 (Japón)</li>
+                    <li>Canción destacada: Together we'll make a promise</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/Pok_mon_10_El_desaf_o_de_Darkrai-657799948-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon 10: El desafío de Darkrai (2007)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 14 de julio de 2007 (Japón)</li>
+                    <li>Historia de: Satoshi Tajiri, Ken Sugimori, Junichi Masuda</li>
+                    <li>Año: 2007</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/Pok_mon_11_Giratina_y_el_defensor_de_los_cielos-348126539-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon 11: Giratina y el defensor de los cielos (2008)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 19 de julio de 2008 (Japón)</li>
+                    <li>Recaudación: 4.8 miles de millones JPY</li>
+                    <li>Música compuesta por: Shinji Miyazaki</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/gekijoban_poketto_monsuta_daiyamondo_paru_purachina_aruseusu_chokoku_no_jiku_e_pokemon_movie_12-898774501-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon 12: Arceus y la joya de la vida (2009)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 18 de julio de 2009 (Japón)</li>
+                    <li>Recaudación: 4.67 miles de millones JPY</li>
+                    <li>Historia de: Satoshi Tajiri, Junichi Masuda, Ken Sugimori</li>
+                    <li>Director artístico: Minoru Akiba</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/Zoroark_el_maestro_de_Ilusiones-487505503-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Zoroark, el maestro de Ilusiones (2010)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno inicial: 10 de julio de 2010</li>
+                    <li>Recaudación: 71.1 millones USD</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://play-lh.googleusercontent.com/-qFGAp-1BkybE-ap1ysi7YtB6Sv4WWYFtjt9K2kZPdFzhQ7-9Zz1KQkP5KOZZy_UIsE" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon Negro: Victini y Reshiram (2011)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno inicial: 16 de julio de 2011</li>
+                    <li>Personajes: Katarina, Cilan, Kibago, Pikachu de Ash, Carlita, MÁS</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://m.media-amazon.com/images/M/MV5BYjVhNDY4NzMtNjkyOC00M2NhLTkzYzYtMTI1NGFlMzEzNmU2XkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_FMjpg_UX1000_.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon Blanco: Victini y Zekrom (2011)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno inicial: 16 de julio de 2011</li>
+                    <li>Personajes: Katarina, Cilan, Kibago, Pikachu de Ash, Carlita, MÁS</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://es.web.img3.acsta.net/pictures/20/09/02/22/11/5068211.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon 15: Kyurem contra el Espadachín Místico (2012)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 14 de julio de 2012 (Japón)</li>
+                    <li>Recaudación: 46 millones USD</li>
+                    <li>Personajes: Kyurem, Keldeo, Cilan, Iris, Ash Ketchum, Cobalion, MÁS</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/Pok_mon_16_Pok_mon_Genesect_y_el_despertar_de_una_leyenda-117660669-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon 16: Pokémon Genesect y el despertar de una leyenda (2013)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 13 de julio de 2013 (Japón)</li>
+                    <li>Recaudación: 32.3 millones USD</li>
+                    <li>Productores ejecutivos: Mitome Asai, Susumu Fukunaga</li>
+                    <li>Canción destacada: Egao</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://r4.abcimg.es/resizer/resizer.php?imagen=https%3A%2F%2Fs3.abcstatics.com%2Fmedia%2Fpeliculas%2F000%2F037%2F120%2Fla-pelicula-pokemon-diancie-y-la-crisalida-de-la-destruccion-1.jpg&nuevoancho=683&medio=abc" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>
+                  Pokémon 17: Diancie y la crisálida de la destrucción (2014)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno inicial: 19 de julio de 2014</li>
+                    <li>Recaudación: 2.91 miles de millones JPY</li>
+                    <li>Música compuesta por: Shinji Miyazaki</li>
+                    <li>Canción destacada: Joake no rjúszeigun</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/Pok_mon_18_Hoopa_y_un_duelo_hist_rico-840673445-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon 18: Hoopa y un duelo histórico (2015)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 18 de julio de 2015 (Japón)</li>
+                    <li>Historia de: Satoshi Tajiri, Junichi Masuda, Ken Sugimori</li>
+                    <li>Año: 2015</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/Pok_mon_Volcanion_y_la_maravilla_mec_nica-126707375-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon: Volcanion y la maravilla mecánica (2016)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 16 de julio de 2016 (Japón)</li>
+                    <li>Secuela: Pokémon: ¡Yo te elijo!</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://www.ecartelera.com/carteles/13200/13251/003_m.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon ¡Te elijo a ti! (2017)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 15 de julio de 2017 (Japón)</li>
+                    <li>Recaudación: 37.7 millones USD</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://m.media-amazon.com/images/M/MV5BMDkxNzRmNDYtMDY0OS00N2JhLTkzZWUtMWE3MzZkNDk1MmJiXkEyXkFqcGdeQXVyNTA3MTU2MjE@._V1_FMjpg_UX1000_.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon: Detective Pikachu (2019)</strong></h5>
+                <p class="card-text"><i>Rob Letterman</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 9 de mayo de 2019 (Colombia)</li>
+                    <li>Recaudación: 433.2 millones USD</li>
+                    <li>Nominaciones: Teen Choice Award al Mejor Actor en Película de Comedia, MÁS</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/Pok_mon_El_poder_de_todos-456606458-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon: El poder de todos (2018)</strong></h5>
+                <p class="card-text"><i>Tetsuo Yajima</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 13 de julio de 2018 (Japón)</li>
+                    <li>Recaudación: 23.7 millones USD</li>
+                    <li>Historia de: Satoshi Tajiri</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/evolution-741466354-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Pokémon. Mewtwo contraataca: Evolución (2019)</strong></h5>
+                <p class="card-text"><i>Kunihiko Yuyama, Motonori Sakakibara</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 12 de julio de 2019 (Japón)</li>
+                    <li>Directores: Kunihiko Yuyama, Tetsuo Yajima, Motonori Sakakibara</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://images.wikidexcdn.net/mwuploads/wikidex/b/bd/latest/20201113154233/P23_P%C3%B3ster_espa%C3%B1ol.png" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>
+                  Pokémon: Los secretos de la selva (2020) </strong></h5>
+                <p class="card-text"><i>Tetsuo Yajima</i></p>
+                <p><small>
+                  <ul>
+                    <li>Fecha de estreno: 25 de diciembre de 2020 (Japón)</li>
+                    <li>Actores de voz: Rika Matsumoto; Ikue Ōtani; Moka Kamishiraishi; Nakamura Kankurō VI</li>
+                    <li>Año: 2020</li>
+                  </ul>
+                </small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card  -->
+        <div class="card mb-3 g-0" style="max-width: 500px;">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <img src="https://pics.filmaffinity.com/bump_of_chicken_gotcha-671676358-large.jpg" class="card-img img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Bump of Chicken: Gotcha (Vídeo musical) (2020)</strong></h5>
+                <p class="card-text"><i>Rie Matsumoto</i></p>
+                <p><small>
+                  Vídeo musical del tema "Gotcha" de la banda de jrock Bump of Chicken, que sigue a cuatro jóvenes en un mundo de fantasía. Fue creado por el estudio de animación Bones, como tributo a la franquicia Pokémon por su 25ª aniversario.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>      
+    </div>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center text-lg-start">
+        <div class="container text-center text-md-start pt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">The Pokémon Company</h6>
+              <p>
+                Es una compañía japonesa creada para controlar el merchandising y
+                las licencias de los productos de la franquicia Pokémon. Está
+                compuesta, a partes iguales, por Nintendo, Game Freak y Creatures.
+                De acuerdo a su cronograma, sus actividades comenzaron en 1998 con
+                la apertura del Centro Pokémon de Tokio.
+              </p>
+            </div>
+            <div class="col-md-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Juegos</h6>
+              <p>
+                <a
+                  href="https://scarletviolet.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                  >Pokémon Escarlata y Púrpura
+                </a>
+              </p>
+              <p>
+                <a
+                  href="https://legends.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                >
+                  Leyendas Pokémon Arceus</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://diamondpearl.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                  >Pokémon Diamante Brillante / Perla Reluciente</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://unite.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                  >Pokémon Unite</a
+                >
+              </p>
+            </div>
+            <div class="col-md-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Ayuda</h6>
+              <p>
+                <a
+                  href="https://www.pokemon.com/es/noticias-pokemon"
+                  class="text-reset"
+                  target="_blank"
+                  >Novedades</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://support.pokemon.com/hc/es"
+                  class="text-reset"
+                  target="_blank"
+                  >Servicio de atención al cliente</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://corporate.pokemon.com/es-es/"
+                  class="text-reset"
+                  target="_blank"
+                  >Sobre nuestra compañía</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.pokemon.com/es/pais-region/"
+                  class="text-reset"
+                  target="_blank"
+                  >Seleccionar país o región</a
+                >
+              </p>
+            </div>
+            <div class="col-md-3 mx-auto mb-4">
+              <h5 class="text-uppercase fw-bold mb-4">© 2023 Copyright:</h5>
+              <p>
+                <i class="bi bi-github me-2 fs-4"></i>
+                <a
+                  href="https://github.com/mcamaya"
+                  class="text-reset"
+                  target="_blank"
+                  >Camila Amaya</a
+                >
+              </p>
+              <p>
+                <i class="bi bi-github me-2 fs-4"></i>
+                <a
+                  href="https://github.com/SHADOW-LUCKY"
+                  class="text-reset"
+                  target="_blank"
+                  >Nicolas Ordoñez</a
+                >
+              </p>
+              <p>
+                <i class="bi bi-github me-2 fs-4"></i>
+                <a
+                  href="https://github.com/Akio1102"
+                  class="text-reset"
+                  target="_blank"
+                  >Cristian Diaz</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
