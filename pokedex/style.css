@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Press+Start+2P&display=swap%27');
+
+* {font-family: 'Exo 2', sans-serif;
+} 
+
+body{
+  background-image: url(../assets/bg-Pokedex.png);
+  
+}
+
+h1{
+  font-family: 'Press Start 2P', cursive;
+}
+
+.all {
+  background-color: rgb(39, 167, 118);
+}
+.steel {
+  background-color: #60a1b8;
+}
+.water {
+  background-color: #2980ef;
+}
+.bug {
+  background-color: #91a119;
+}
+.dragon {
+  background-color: #5061e1;
+}
+.electric {
+  background-color: #fac001;
+}
+.ghost {
+  background-color: #704170;
+}
+.fire {
+  background-color: #e62829;
+}
+.fairy {
+  background-color: #f170f1;
+}
+.ice {
+  background-color: #3fd8ff;
+}
+.fighting {
+  background-color: #ff8000;
+}
+.normal {
+  background-color: #9fa19f;
+}
+.grass {
+  background-color: #3fa129;
+}
+.psychic {
+  background-color: #f04179;
+}
+.rock {
+  background-color: #afa981;
+}
+.dark {
+  background-color: #50413f;
+}
+.ground {
+  background-color: #915121;
+}
+.poison {
+  background-color: #9141cb;
+}
+.flying {
+  background-color: #81b9ef;
+}
+.bg-target{
+  background-color: rgba(21, 18, 59, 0.603);
+}
+.bg-footer{
+  background-color: #325374;
+}
