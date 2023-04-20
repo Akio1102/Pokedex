@@ -5,6 +5,568 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Historia</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/pokebola.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark text-center">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="../assets/pikachu.png" width="60rem" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="../home/index.html"><i class="bi bi-house"></i> Home</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="nav-link active" aria-current="page" href="./history.html"><i class="bi bi-book"></i> Historia</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="nav-link active" aria-current="page" href="../pokedex/pokedex.html"><i class="bi bi-search"></i> Pokédex</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="nav-link active" aria-current="page" href="../games/games.html" aria-disabled="true"><i class="bi bi-globe-americas"></i> Regiones</a>
+                      </li>
+                      <li class="nav-item ">
+                          <a class="nav-link active" aria-current="page" href="../region/region.html" aria-disabled="true"><i class="bi bi-joystick"></i> Juegos</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <i class="bi bi-plus-circle"></i> Ver más
+                          </a>
+                          <ul class="dropdown-menu mr-5" aria-labelledby="navbarDropdown">
+                            <li>
+                              <a class="dropdown-item" href="../cartas/cartas.html"
+                                ><i class="bi bi-card-text"></i> Cartas</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../mangas/mangas.html"
+                                ><i class="bi bi-journal-richtext"></i> Mangas</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../guias/guias.html"
+                                ><i class="bi bi-map-fill"></i> Guías</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../twitch/twitch.html"
+                                ><i class="bi bi-twitch"></i> Streamers</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../roms/roms.html"
+                                ><i class="bi bi-sd-card-fill"></i> ROMS</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../peliculas/peliculas.html"
+                                ><i class="bi bi-file-earmark-break-fill"></i>
+                                Películas</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../generations/generations.html"
+                                ><i class="bi bi-reception-4"></i> Generaciones</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../campeones/campeones.html"
+                                ><i class="bi bi-trophy-fill"></i> Campeones</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../tournaments/tournaments.html"
+                                ><i class="bi bi-trophy"></i> Torneos</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="../news/news.html"
+                                ><i class="bi bi-newspaper"></i> Novedades</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    </header>
+    <!-- Carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1000">
+          <img
+            src="../assets/inicioHistory.webp"
+            class="img-responsive"
+            alt="Inicio de Pokemon"
+            title="Inicio de Pokemon"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Inicio de Pokemon</h2>
+            <p>
+              El encuentro de Ash con Pikachu es un momento icónico en la
+              franquicia de Pokémon, en el cual Ash, un joven entrenador, recibe
+              a Pikachu como su primer Pokémon inicial después de llegar tarde a
+              la oficina del Profesor Oak. Aunque Pikachu inicialmente se
+              comporta de manera desafiante, eventualmente se convierte en un
+              compañero leal y valiente en el viaje de Ash para convertirse en
+              el mejor entrenador de Pokémon del mundo. Esta relación especial
+              entre Ash y Pikachu es un elemento central y popular en la
+              franquicia de Pokémon, y se muestra en la película de acción en
+              vivo de 2019, Pokémon: Detective Pikachu.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1500">
+          <img
+            src="../assets/pokemon2.jpg"
+            class="img-responsive"
+            alt="Pokemon Blanco 2 y Negro 2"
+            title="Pokemon Blanco 2 y Negro 2"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Pokemon Blanco 2 y Negro 2</h2>
+            <p>
+              Pokémon Blanco 2 y Negro 2 son secuelas directas del juego
+              original de Pokémon Blanco y Negro, ambientado en la región de
+              Teselia. Los jugadores asumen el papel de un nuevo entrenador
+              Pokémon y deben recorrer la región para capturar y entrenar
+              Pokémon, competir en la Liga Pokémon y enfrentarse a una nueva
+              organización malvada llamada el Team Plasma. Los juegos incluyen
+              nuevas formas de Pokémon y características de jugabilidad como el
+              Pokémon World Tournament. En general, los juegos ofrecen una
+              experiencia sólida para los fans de Pokémon y siguen siendo
+              populares entre los jugadores.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="1500">
+          <img
+            src="../assets/pokemon-go.jpg"
+            class="img-responsive"
+            alt="Pokemon Go"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Pokemon GO</h2>
+            <p>
+              Pokémon Go es un juego de realidad aumentada para dispositivos
+              móviles en el que los jugadores pueden capturar, entrenar y
+              batallar con Pokémon en el mundo real. Utilizando la cámara y el
+              GPS del dispositivo, los jugadores pueden ver y atrapar Pokémon en
+              lugares reales, así como también visitar Poképaradas y Gimnasios
+              para obtener objetos y participar en batallas. El juego ha sido un
+              gran éxito desde su lanzamiento en 2016 y ha llevado a muchos
+              jugadores a explorar su entorno de una manera nueva y emocionante
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Cards History -->
+    <div class="container-fluid mt-4">
+      <div class="row gx-3">
+        <div class="col-12">
+          <div
+            class="card mb-3 shadow-lg p-3 mb-5 bg-card1 bg-transparent rounded"
+          >
+            <div class="row g-0">
+              <div class="col-lg-4 my-lg-auto">
+                <img
+                  src="../assets/Satoshi-Tajiri.jpg"
+                  class="img-fluid rounded-start"
+                  alt="Satoshi Tajiri"
+                  title="Satoshi Tajiri"
+                />
+              </div>
+              <div class="col">
+                <div class="card-body text-center my-5">
+                  <div class="row g-3">
+                    <h4 class="card-title fs-1">Creacion Pokemon</h4>
+                    <p class="card-text fs-4">
+                      En 1989, Tajiri fundó la compañía de videojuegos Game
+                      Freak junto con Ken Sugimori, un ilustrador que había
+                      conocido en la universidad. Juntos, trabajaron en el
+                      primer juego de Pokémon, que se llamó originalmente
+                      "Capsule Monsters". Sin embargo, el juego no fue aceptado
+                      por los editores y Tajiri y Sugimori tuvieron que buscar
+                      financiamiento de otras fuentes.
+                    </p>
+                    <p class="card-text fs-4">
+                      Finalmente, en 1996, Game Freak lanzó el primer videojuego
+                      de Pokémon para la consola Game Boy de Nintendo en Japón.
+                      El juego se llamó "Pocket Monsters" y fue un gran éxito.
+                      Los jugadores asumían el papel de un entrenador Pokémon
+                      que viajaba por la región ficticia de Kanto, capturando y
+                      entrenando criaturas llamadas Pokémon para combatir contra
+                      otros entrenadores y avanzar en la historia. El juego
+                      ofrecía más de 150 Pokémon diferentes para capturar y
+                      entrenar, y presentaba un sistema de combate basado en
+                      turnos que se convirtió en una característica clave de la
+                      franquicia.
+                    </p>
+                    <a
+                      href="https://es.wikipedia.org/wiki/Satoshi_Tajiri"
+                      target="_blank"
+                      class="card-text btn btn-outline-dark w-50 fs-3 mx-auto"
+                      type="button"
+                      title="Infografia Satoshi Tajiri"
+                    >
+                      Infografia Satoshi Tajiri</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div
+            class="card mb-3 shadow-lg p-3 mb-5 bg-card2 bg-transparent rounded"
+          >
+            <div class="row g-0">
+              <div class="col-lg-4 my-lg-auto">
+                <img
+                  src="../assets/consola1999.webp"
+                  class="img-fluid rounded-start"
+                  alt="Pokemon TV"
+                  title="Pokemon TV"
+                />
+              </div>
+              <div class="col">
+                <div class="card-body text-center my-5">
+                  <div class="row g-3">
+                    <h4 class="card-title fs-1">Pokemon en TV</h4>
+                    <p class="card-text fs-4">
+                      El éxito del primer juego llevó a una serie de
+                      continuaciones y spin-offs, incluyendo la serie de
+                      televisión de Pokémon y la película "Pokémon: la
+                      película". La serie de televisión sigue las aventuras de
+                      un joven entrenador llamado Ash Ketchum y su fiel
+                      compañero Pikachu, mientras que la película cuenta la
+                      historia de Mewtwo, un Pokémon creado artificialmente que
+                      busca venganza contra la humanidad.
+                    </p>
+                    <p class="card-text fs-4">
+                      En los años siguientes, se lanzaron numerosos videojuegos
+                      de Pokémon, incluyendo Pokémon Oro y Plata, que
+                      presentaron nuevos Pokémon y regiones para explorar.
+                      También se lanzaron nuevas series de televisión, películas
+                      y juegos de cartas coleccionables. La franquicia se
+                      expandió aún más con la introducción de consolas
+                      portátiles como la Game Boy Advance y la Nintendo DS, y
+                      continuó evolucionando con nuevos juegos y características
+                      como el sistema de intercambio de Pokémon en línea.
+                    </p>
+                    <a
+                      href="https://es.wikipedia.org/wiki/Pok%C3%A9mon_(serie_de_televisi%C3%B3n)"
+                      target="_blank"
+                      class="card-text btn btn-outline-dark w-50 fs-3 mx-auto"
+                      type="button"
+                      title="Pokemon TV"
+                    >
+                      Pokemon TV</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div
+            class="card mb-3 shadow-lg p-3 mb-5 bg-card3 bg-transparent rounded"
+          >
+            <div class="row g-0">
+              <div class="col-lg-4 my-lg-auto">
+                <img
+                  src="../assets/pokemon-goCard.jpg"
+                  class="img-fluid rounded-start"
+                  alt="Pokemon Go"
+                  title="Pokemon Go"
+                />
+              </div>
+              <div class="col">
+                <div class="card-body text-center">
+                  <div class="row g-3">
+                    <h4 class="card-title fs-1">Juegos Pokemon</h4>
+                    <p class="card-text fs-4">
+                      En 2011, se lanzó la consola Nintendo 3DS, que permitía
+                      jugar juegos de Pokémon en 3D. Se lanzaron nuevos juegos
+                      de Pokémon para esta consola, incluyendo Pokémon X y Y y
+                      Pokémon Sol y Luna.
+                    </p>
+                    <p class="card-text fs-4">
+                      En 2016, se lanzó el juego para dispositivos móviles
+                      Pokémon Go, que se convirtió en un fenómeno mundial y
+                      generó una gran cantidad de interés en la franquicia.
+                    </p>
+                    <p class="card-text fs-4">
+                      En 2019, se lanzó la consola híbrida Nintendo Switch, que
+                      permite jugar juegos de Pokémon tanto en formato portátil
+                      como en el televisor. Se lanzaron nuevos juegos de Pokémon
+                      para esta consola, incluyendo Pokémon Espada y Escudo y
+                      Pokémon Brillante Diamante y Perla.
+                    </p>
+                    <a
+                      href="https://es.wikipedia.org/wiki/Anexo:Videojuegos_de_Pokémon"
+                      target="_blank"
+                      class="card-text btn btn-outline-dark w-50 fs-3 mx-auto"
+                      type="button"
+                      title="Juegos Pokemon"
+                    >
+                      Juegos Pokemon</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div
+            class="card mb-3 shadow-lg p-3 mb-5 bg-card4 bg-transparent rounded"
+          >
+            <div class="row g-0">
+              <div class="col-lg-4 my-lg-auto">
+                <img
+                  src="../assets/PokemonDiamante.jpg"
+                  class="img-fluid rounded-start w-100"
+                  alt="POKÉMON DIAMANTE BRILLANTE Y POKÉMON PERLA BRILLANTE"
+                  title="POKÉMON DIAMANTE BRILLANTE Y POKÉMON PERLA BRILLANTE"
+                />
+              </div>
+              <div class="col">
+                <div class="card-body text-center">
+                  <div class="row g-3">
+                    <h4 class="card-title fs-1">Juegos Pokemon 2</h4>
+                    <p class="card-text fs-4">
+                      En 2020, se lanzó Pokémon Café Mix, un juego móvil y para
+                      Nintendo Switch en el que los jugadores administran un
+                      café y resuelven puzzles para atender a los clientes, que
+                      son Pokémon.
+                    </p>
+                    <p class="card-text fs-4">
+                      En 2021, se lanzó New Pokémon Snap para Nintendo Switch,
+                      una secuela del popular juego de Nintendo 64 en el que los
+                      jugadores toman fotografías de los Pokémon en su hábitat
+                      natural. También en 2021, se lanzó Pokémon Unite, un juego
+                      multijugador en línea de arena de batalla en el que los
+                      jugadores forman equipos para luchar contra otros equipos
+                      de jugadores y sus Pokémon.
+                    </p>
+                    <p class="card-text fs-4">
+                      En 2022, se anunció el lanzamiento de Pokémon Legends:
+                      Arceus, un nuevo juego de Pokémon ambientado en la antigua
+                      región de Hisui, que se basa en la región histórica de
+                      Japón llamada Hisui-zumi. El juego tiene un enfoque en la
+                      exploración y la investigación de la vida silvestre, y los
+                      jugadores asumen el papel de un investigador de Pokémon.
+                    </p>
+                    <a
+                      href="https://www.vidaextra.com/listas/todos-videojuegos-pokemon-saga-principal-a-spin-offs-aplicaciones"
+                      target="_blank"
+                      class="card-text btn btn-outline-dark w-50 fs-3 mx-auto"
+                      type="button"
+                      title="POKÉMON DIAMANTE BRILLANTE Y POKÉMON PERLA BRILLANTE"
+                    >
+                      Juegos Pokemon ll</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start">
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+          <div class="col-md-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">The Pokémon Company</h6>
+            <p>
+              Es una compañía japonesa creada para controlar el merchandising y
+              las licencias de los productos de la franquicia Pokémon. Está
+              compuesta, a partes iguales, por Nintendo, Game Freak y Creatures.
+              De acuerdo a su cronograma, sus actividades comenzaron en 1998 con
+              la apertura del Centro Pokémon de Tokio.
+            </p>
+          </div>
+          <div class="col-md-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Juegos</h6>
+            <p>
+              <a
+                href="https://scarletviolet.pokemon.com/es-es/"
+                class="text-reset"
+                target="_blank"
+                >Pokémon Escarlata y Púrpura
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://legends.pokemon.com/es-es/"
+                class="text-reset"
+                target="_blank"
+              >
+                Leyendas Pokémon Arceus</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://diamondpearl.pokemon.com/es-es/"
+                class="text-reset"
+                target="_blank"
+                >Pokémon Diamante Brillante / Perla Reluciente</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://unite.pokemon.com/es-es/"
+                class="text-reset"
+                target="_blank"
+                >Pokémon Unite</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Ayuda</h6>
+            <p>
+              <a
+                href="https://www.pokemon.com/es/noticias-pokemon"
+                class="text-reset"
+                target="_blank"
+                >Novedades</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://support.pokemon.com/hc/es"
+                class="text-reset"
+                target="_blank"
+                >Servicio de atención al cliente</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://corporate.pokemon.com/es-es/"
+                class="text-reset"
+                target="_blank"
+                >Sobre nuestra compañía</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.pokemon.com/es/pais-region/"
+                class="text-reset"
+                target="_blank"
+                >Seleccionar país o región</a
+              >
+            </p>
+          </div>
+          <div class="col-md-3 mx-auto mb-4">
+            <h5 class="text-uppercase fw-bold mb-4">© 2023 Copyright:</h5>
+            <p>
+              <i class="bi bi-github me-2 fs-4"></i>
+              <a
+                href="https://github.com/mcamaya"
+                class="text-reset"
+                target="_blank"
+                >Camila Amaya</a
+              >
+            </p>
+            <p>
+              <i class="bi bi-github me-2 fs-4"></i>
+              <a
+                href="https://github.com/SHADOW-LUCKY"
+                class="text-reset"
+                target="_blank"
+                >Nicolas Ordoñez</a
+              >
+            </p>
+            <p>
+              <i class="bi bi-github me-2 fs-4"></i>
+              <a
+                href="https://github.com/Akio1102"
+                class="text-reset"
+                target="_blank"
+                >Cristian Diaz</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

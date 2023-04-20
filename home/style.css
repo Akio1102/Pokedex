@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Press+Start+2P&display=swap');
+/* INICIO */
+
+* {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.inicio {
+    background-color: #fbc843;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='112' height='92' viewBox='0 0 112 92'%3E%3Cg fill='%23ffb200' fill-opacity='0.4'%3E%3Cpath fill-rule='evenodd' d='M72 10H40L16 20H0v8h16l24-14h32l24 14h16v-8H96L72 10zm0-8H40L16 4H0v8h16l24-6h32l24 6h16V4H96L72 2zm0 84H40l-24-6H0v8h16l24 2h32l24-2h16v-8H96l-24 6zm0-8H40L16 64H0v8h16l24 10h32l24-10h16v-8H96L72 78zm0-12H40L16 56H0v4h16l24 14h32l24-14h16v-4H96L72 66zm0-16H40l-24-2H0v4h16l24 6h32l24-6h16v-4H96l-24 2zm0-16H40l-24 6H0v4h16l24-2h32l24 2h16v-4H96l-24-6zm0-16H40L16 32H0v4h16l24-10h32l24 10h16v-4H96L72 18z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.inicio__imagen {
+    height: 90%;
+    
+}
+
+.inicio__imagen img {
+    object-fit: cover;
+    filter: drop-shadow(4px 2px 1px #424242);
+}
+
+.inicio__pixel-pokemon {
+    height: 100%;
+}
+
+/* HISTORIA */
+.historia {
+    background-color: #ff8a61;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23fd6a37' fill-opacity='0.43' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.historia h4 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.historia__collage {
+    height: 30rem;
+    min-width: 500px;
+    max-width: 585px;
+}
+.historia__img-1 {
+    height: 15rem;
+    left: 0;
+    top: 0;
+}
+.historia__img-2 {
+    height: 25rem;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 20px;
+    z-index: 30;
+}
+.historia__img-3 {
+    height: 14rem;
+    margin: auto;
+    right: 0;
+    bottom: 0;
+}
+/* POKÉDEX */
+.pokedex {
+    background-color: #1994ce;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23117caf' fill-opacity='0.24' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.pokedex h2 {
+    font-family: 'Press Start 2P', cursive;
+}
+.pokedex h6 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.pokedex__card {
+    border-radius: 30px;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    position: static;
+}
+
+.pokedex__cards-features {
+    border-radius: 5px;
+}
+
+/* JUEGOS */
+.juegos {
+    background-color: #7aba79;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%2356a92f' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+.juegos img {
+    transform: skew(-14deg);
+    -webkit-transform: skew(-14deg);
+    -moz-transform: skew(-14deg);
+}
+
+.juegos h4 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* REGIONES */
+.nav-pills-img {
+    object-fit: cover;
+    height: 55vh;
+    filter: brightness(40%);
+}
+
+
+.regiones {
+    background-color: #9179ba;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80' width='80' height='80'%3E%3Cg fill='%23826ca7' fill-opacity='0.4'%3E%3Cpath d='M0 0h80v80H0V0zm20 20v40h40V20H20zm20 35a15 15 0 1 1 0-30 15 15 0 0 1 0 30z' opacity='.5'%3E%3C/path%3E%3Cpath d='M15 15h50l-5 5H20v40l-5 5V15zm0 50h50V15L80 0v80H0l15-15zm32.07-32.07l3.54-3.54A15 15 0 0 1 29.4 50.6l3.53-3.53a10 10 0 1 0 14.14-14.14zM32.93 47.07a10 10 0 1 1 14.14-14.14L32.93 47.07z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+}
+
+.regiones h2 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.regiones__cards-box {
+    border-radius: 30px;
+    background: rgb(236, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.regiones button{
+    color: black;
+
+}
+
+.regiones #pills-home-tab.nav-link.active {
+    background-color: #424242;
+    color: white;
+}
+.regiones #pills-profile-tab.nav-link.active {
+    background-color: #424242;
+    color: white;
+}
+.regiones #pills-contact-tab.nav-link.active {
+    background-color: #424242;
+    color: white;
+}
+.regiones #pills-disabled-tab.nav-link.active {
+    background-color: #424242;
+    color: white;
+}
+.regiones #pills-region-tab.nav-link.active {
+    background-color: #424242;
+    color: white;
+}
+
+.regiones__cards-list {
+    list-style-type: circle;
+}
