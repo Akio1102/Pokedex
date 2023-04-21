@@ -58,6 +58,31 @@
     right: 0;
     bottom: 0;
 }
+@media (max-width: 500px) {
+    .historia__collage {
+        height: 20rem;
+        width: 2rem;
+    }
+    .historia__img-1 {
+        height: 11rem;
+        left: 0;
+        top: 0;
+    }
+    .historia__img-2 {
+        height: 17rem;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 20px;
+        z-index: 30;
+    }
+    .historia__img-3 {
+        height: 10rem;
+        margin: auto;
+        right: 0;
+        bottom: 0;
+    }
+  }
 /* POKÉDEX */
 .pokedex {
     background-color: #1994ce;

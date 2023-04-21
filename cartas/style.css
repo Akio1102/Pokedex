@@ -19,8 +19,13 @@
   }
 
   .main {
-      height: 72vh;
+      height: 710px;
       overflow-y: scroll;
+  }
+
+  .sidebar {
+    height: 750px;
+    overflow-y: scroll;
   }
   
   h4{
